@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Hubble Legacy Field
-date: 2020-11-6 5:30:00 -0800
+date: 2019-05-11 5:30:00 -0800
 description: Exploring the Hubble Legacy Field # Add post description (optional)
-img: hubble-legacy-field.png # Add image post (optional)
+img: hubble-legacy-field-cover.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [hubble, nasa, space, gdal]
 ---

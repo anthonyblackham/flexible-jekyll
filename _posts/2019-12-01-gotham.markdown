@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Gotham
-date: 2020-11-7 5:30:00 -0800
+date: 2019-12-01 5:30:00 -0800
 description: Mapping the Giant Lighted Lucit Map of Gotham in Real Life # Add post description (optional)
-img: gotham-web-map.png # Add image post (optional)
+img: gotham-cover.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [batman, webmap, leaflet, qgis, qgis2web]
 ---
