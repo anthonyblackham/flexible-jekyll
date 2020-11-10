@@ -11,7 +11,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Anthony Blackham # add your name
 author-img: anthony-blackham.jpg # add your photo
-about-author: I make maps. # add description
+about-author: I make maps # add description
 #social-twitter: # add your Twitter handle
 #social-facebook: # add your Facebook handle
 social-github: anthonyblackham # add your Github handle

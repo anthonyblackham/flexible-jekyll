@@ -88,11 +88,11 @@ Compile Pages:
 jekyll serve
 ```
 
-Your pages can now be viewed at 
+It will give you a local host URL to access your local build, which in my case was the following: 
 
 http://127.0.0.1:4000/flexible-jekyll/
 
-Then when you've made all your modifications and posts, you can compile the page and upload the compiled version to your gh-pages site
+To cancel the jekyll server just press `ctrl+c`
 
 ## Customizing the Page
 
@@ -150,7 +150,7 @@ The filename should have the pattern `YYYY-MM-DD-post-title.markdown` eg `2020-1
 
 The general header looks like this:
 
-```
+```yaml
 ---
 layout: post
 title: How to Make a Blog
@@ -164,7 +164,22 @@ tags: [Blog, Writing]
 
 As above you'll want to put any image assets in `flexible-jekyll/assets/img/`. All that's left is to fill the body with content using the markdown format and save the markdown file and you've finished your first post. 
 
+## Publishing to Github
+
+Github is fairly flexible in how you publish your static page. Assuming you don't have a custom domain, you can rename the `flexible-jekyll` repo name to your `githubhandle.github.io` and just set the `config_yml` baseurl to `baseurl: "/"`. If you have an existing domain you want to use you can use you can set it in your github repo settings and set the baseurl to `/blog` or whatever you like.
+
+Github will publish your page from the master or master/docs or you can put it under a different branch called gh-pages. There isn't a specific advantage to publishing in master vs a branch other than just how you want to organize your workflow. I generally like to separate the original fork from my changes and just cherry pick any updates but some people prefer to work directly off the master fork and thats fine too. 
+
+To publish to the master, once you've cloned and made your changes to your theme, these are the commands I use in the terminal:
+
+```shell
+git add -A
+git commit -m "Initial Commits"
+git push origin master
+```
+If everything goes according to plan your site will shortly show up at the domain you configured, which in my case is [https://anthonyblackham.github.io/blog/](https://anthonyblackham.github.io/blog/)
+
 ### Summary
 
-This is just the basic get up and running tutorial but there are plenty of other options to tweak and modify the blog to make it unique and provide a platform that will showcase everything that you have to offer to the world.
+This is just the basic getting started tutorial but there are plenty of other options to tweak and modify the blog to make it unique and provide a platform that will showcase everything that you have to offer to the world.
 

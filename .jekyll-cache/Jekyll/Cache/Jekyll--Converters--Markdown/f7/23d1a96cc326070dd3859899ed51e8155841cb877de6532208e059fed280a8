@@ -1,4 +1,4 @@
-I"&<p>I work on a variety of projects and write copious notes and documentation along the way but never quite make it to the final step of documenting the final products. I’ve attempted to create blogs on many different platforms with varying levels of cost and complexity, but I’ve always come back to using static site generators.</p>
+I"4/<p>I work on a variety of projects and write copious notes and documentation along the way but never quite make it to the final step of documenting the final products. I’ve attempted to create blogs on many different platforms with varying levels of cost and complexity, but I’ve always come back to using static site generators.</p>
 
 <h2 id="types-of-blogs">Types of Blogs:</h2>
 
@@ -85,8 +85,6 @@ sudo gem install jemoji
 
 <p>http://127.0.0.1:4000/flexible-jekyll/</p>
 
-<p>Then when you’ve made all your modifications and posts, you can compile the page and upload the compiled version to your gh-pages site</p>
-
 <h2 id="customizing-the-page">Customizing the Page</h2>
 
 <p>The default file for customizing the main page is the <code class="language-plaintext highlighter-rouge">_config.yml</code></p>
@@ -142,21 +140,35 @@ sudo gem install jemoji
 
 <p>The general header looks like this:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: post
-title: How to Make a Blog
-date: 2020-11-09 5:30:00 +0800
-description: This post describes how to make a blog using Jekyll and Github Pages # Add post description (optional)
-img: making-a-blog.png # Add image post (optional)
-fig-caption: # Add figcaption (optional)
-tags: [Blog, Writing]
----
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">How to Make a Blog</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2020-11-09 5:30:00 +0800</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">This post describes how to make a blog using Jekyll and Github Pages</span> <span class="c1"># Add post description (optional)</span>
+<span class="na">img</span><span class="pi">:</span> <span class="s">making-a-blog.png</span> <span class="c1"># Add image post (optional)</span>
+<span class="na">fig-caption</span><span class="pi">:</span> <span class="c1"># Add figcaption (optional)</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">Blog</span><span class="pi">,</span> <span class="nv">Writing</span><span class="pi">]</span>
+<span class="nn">---</span>
 </code></pre></div></div>
 
 <p>As above you’ll want to put any image assets in <code class="language-plaintext highlighter-rouge">flexible-jekyll/assets/img/</code>. All that’s left is to fill the body with content using the markdown format and save the markdown file and you’ve finished your first post.</p>
 
+<h2 id="publishing-to-github">Publishing to Github</h2>
+
+<p>Github is fairly flexible in how you publish your static page. Assuming you don’t have a custom domain, you can rename the <code class="language-plaintext highlighter-rouge">flexible-jekyll</code> repo name to your <code class="language-plaintext highlighter-rouge">githubhandle.github.io</code> and just set the <code class="language-plaintext highlighter-rouge">config_yml</code> baseurl to <code class="language-plaintext highlighter-rouge">baseurl: "/"</code>. If you have an existing domain you want to use you can use you can set it in your github repo settings and set the baseurl to <code class="language-plaintext highlighter-rouge">/blog</code> or whatever you like.</p>
+
+<p>Github will publish your page from the master or master/docs or you can put it under a different branch called gh-pages. There isn’t a specific advantage to publishing in master vs a branch other than just how you want to organize your workflow. I generally like to separate the original fork from my changes and just cherry pick any updates but some people prefer to work directly off the master fork and thats fine too.</p>
+
+<p>To publish to the master, once you’ve cloned and made your changes to your theme, these are the commands I use in the terminal:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nt">-A</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial Commits"</span>
+git push origin master
+</code></pre></div></div>
+<p>If everything goes according to plan your site will shortly show up at the domain you configured, which in my case is <a href="https://anthonyblackham.github.io/blog/">https://anthonyblackham.github.io/blog/</a></p>
+
 <h3 id="summary">Summary</h3>
 
-<p>This is just the basic get up and running tutorial but there are plenty of other options to tweak and modify the blog to make it unique and provide a platform that will showcase everything that you have to offer to the world.</p>
+<p>This is just the basic getting started tutorial but there are plenty of other options to tweak and modify the blog to make it unique and provide a platform that will showcase everything that you have to offer to the world.</p>
 
 :ET
