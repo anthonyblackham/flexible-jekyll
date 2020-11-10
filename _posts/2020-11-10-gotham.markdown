@@ -16,7 +16,15 @@ If you look closely at the map you can see that it is actually a map of St. Loui
 
 You can see the map in action below:
 
-<iframe src="https://anthonyblackham.github.io/gotham" style="width: 1280px; height: 720px; border: 0px"></iframe>
+<div class="embed-container">
+  <iframe
+      src="https://anthonyblackham.github.io/gotham"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
 
 Here is a rough summary of episodes and timestamps for when the map showed up in the series:
 
