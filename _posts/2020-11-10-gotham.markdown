@@ -8,11 +8,11 @@ fig-caption: # Add figcaption (optional)
 tags: [batman, webmap, leaflet, qgis, qgis2web]
 ---
 
-I recently watched all 3 seasons of the 1966 Batman TV series with Adam West and Burt Ward as the dynamic duo and a recurring element in many of the episodes was the Giant Lighted Lucite Map of Gotham City (later called the Batmobile Tracking Map in Season 2).
+I recently watched all 3 seasons of the 1966 Batman TV series with Adam West and Burt Ward as the dynamic duo. A recurring element in many of the episodes was the Giant Lighted Lucite Map of Gotham City..
 
 ![Giant Lighted Lucite Map of Gotham]({{site.baseurl}}/assets/img/gotham-lucite-map.png)
 
-If you look closely at the map you can see that it is actually a map of St. Louis, Missouri. I took a screenshot of the map and georefererenced it in QGIS and sketched out the features on the map from each episode that it was used. I then used the [qgis2web](https://github.com/tomchadwin/qgis2web) plugin to generate a web map. It doesn't match up exactly since the roads have changed a bit since the 1960s but it still matches up prett well.
+If you look closely at the map you can see that it is actually a map of St. Louis, Missouri. I took a screenshot of the map and georefererenced it in QGIS. I sketched out the features on the map from every episode it was used. I then used the [qgis2web](https://github.com/tomchadwin/qgis2web) plugin to generate a web map. There are some changes in the city since the map was drawn in 1966 but overall it matches up pretty well.
 
 You can see the map in action below:
 
@@ -40,14 +40,14 @@ Here is a rough summary of episodes and timestamps for when the map showed up in
 - S2 E53 11:23, 17:35 (best view)
 - S2 E54 2:38 brief, 9:58
 
-Miscellaneous Maps:
+Bonus Maps:
 
 - S3 E25 19:12 alternate Gotham map
 - S2 E37 00:30 rare art map
 
 ### Future Ideas
 
-In season two the map was repurposed as the Batmobile Tracking Map and utilised a series of lights flashing to simulate trackers - leaflet has a variety of tools to animate features so you could recreate catwoman running to her hideout.
+In the second season the map was repurposed as the Batmobile Tracking Map and utilised a series of lights flashing to simulate trackers. Leaflet has a variety of tools to animate features that could be used to recreate tracking catwoman to her hideout like in Season 2, Episode 34.
 
 ### Source Files
 
