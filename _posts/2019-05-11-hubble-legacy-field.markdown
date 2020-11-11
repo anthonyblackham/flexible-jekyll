@@ -34,11 +34,11 @@ The second step was to get the [gdal2tiles]((https://github.com/commenthol/gdal2
 
 Dependencies:
 
-```shell
+```
 sudo apt install python3-gdal
 ```
 
-```shell
+```
 git clone https://github.com/commenthol/gdal2tiles-leaflet.git
 ```
 
@@ -46,7 +46,7 @@ git clone https://github.com/commenthol/gdal2tiles-leaflet.git
 
 This is the command for the python library to generate the tiles:
 
-```shell
+```
 gdal2tiles.py -l -p raster -z 0-5 -w none <image> <tilesdir>
 ```
 
@@ -56,7 +56,7 @@ In order to determine the zoom (-z) factor, we will use the formula: `log2(max(w
 
 Since our image is 25500 our equation we can run in the terminal is
 
-```shell
+```
 echo "l(25500/256)/l(2)" | bc -l
 ```
 
@@ -64,7 +64,7 @@ This equals 6.64, so you round up to 7, and our zoom factor will be `-z 0-7`
 
 So our final command will be:
 
-```shell
+```
 gdal2tiles.py -l -p raster -z 0-7 -w none STSCI-H-p1917a-f-25500x25500.tif tiles
 ```
 

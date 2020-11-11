@@ -103,6 +103,11 @@ a {
   /* 2 */
 }
 
+a:link {
+  color: #35b7ff;
+  background-color: transparent;
+}
+
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -437,14 +442,14 @@ template {
 }
 
 .highlight {
-  background-color: #faf9f9;
+  background-color: #686868;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
 }
 
 .highlighter-rouge {
-  color: #ce887b;
+  color: #35b7ff;
   font-weight: 400;
   border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
@@ -774,8 +779,8 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #515151;
-  background-color: #fbfbfb;
+  color: #aaaaaa;
+  background-color: #111111;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -889,7 +894,7 @@ table tfoot td {
 }
 
 .post, .article-page {
-  background-color: #fff;
+  background-color: #3a3a3a;
 }
 
 ::-moz-selection {
@@ -899,7 +904,7 @@ table tfoot td {
 
 ::selection {
   background: rgba(38, 57, 89, 0.8);
-  color: #ffffff;
+  color: #111111;
 }
 
 .clearfix::before, .clearfix::after {
@@ -933,7 +938,7 @@ table tfoot td {
   width: 240px;
   height: 100%;
   padding: 20px 10px;
-  background-color: #ffffff;
+  background-color: #1b1b1b;
 }
 
 .about {
@@ -948,7 +953,7 @@ table tfoot td {
   -webkit-border-radius: 100%;
           border-radius: 100%;
   overflow: hidden;
-  background-color: #333030;
+  background-color: #ababab;
 }
 
 .about img {
@@ -975,7 +980,7 @@ table tfoot td {
   padding-bottom: 15px;
   font-size: 16px;
   text-transform: uppercase;
-  color: #333030;
+  color: #aaaaaa;
   font-weight: 700;
 }
 
@@ -992,7 +997,7 @@ table tfoot td {
   height: 7px;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  background-color: #515151;
+  background-color: #ababab;
 }
 
 .about p {
@@ -1023,7 +1028,7 @@ table tfoot td {
 
 .contact .contact-title {
   position: relative;
-  color: #333030;
+  color: #aaaaaa;
   font-weight: 400;
   font-size: 12px;
   margin: 0 0 5px;
@@ -1043,7 +1048,7 @@ table tfoot td {
   position: absolute;
   top: 50%;
   left: 0;
-  background-color: #515151;
+  background-color: #aaaaaa;
 }
 
 .contact .contact-title::after {
@@ -1058,7 +1063,7 @@ table tfoot td {
   position: absolute;
   top: 50%;
   right: 0;
-  background-color: #515151;
+  background-color: #aaaaaa;
 }
 
 .contact ul {
@@ -1078,7 +1083,7 @@ table tfoot td {
 }
 
 .contact ul li a {
-  color: #515151;
+  color: #aaaaaa;
   display: block;
   padding: 5px;
   font-size: 18px;
@@ -1164,7 +1169,7 @@ footer .copyright {
 .post .post-content .post-title a {
   font-family: 'PT Serif', serif;
   text-decoration: none;
-  color: #263959;
+  color: #FFFFFF;
 }
 
 .post .post-content p {
@@ -1273,11 +1278,11 @@ a.newer-posts:hover {
 .page-footer .page-share a {
   display: inline-block;
   text-decoration: none;
-  background-color: #fafafa;
-  border: 1px solid #ecf0f1;
+  background-color: #35b7ff;
+  border: 1px solid #111111;
   padding: 5px 10px;
   margin-left: 5px;
-  color: #263959;
+  color: #111111;
   font-size: 12px;
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
@@ -1289,7 +1294,7 @@ a.newer-posts:hover {
 }
 
 .page-footer .page-share a:hover {
-  background-color: #ecf0f1;
+  background-color: #111111;
 }
 
 .page-footer .page-tag a {
@@ -1297,9 +1302,9 @@ a.newer-posts:hover {
   font-size: 10px;
   padding: 5px 10px;
   margin-left: 5px;
-  color: #263959;
+  color: #35b7ff;
   text-transform: uppercase;
-  border: 1px solid #263959;
+  border: 1px solid #aaaaaa;
 }
 
 .page-footer .page-tag a:hover {
@@ -1309,7 +1314,7 @@ a.newer-posts:hover {
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #111111;
   padding: 0 20px 20px;
 }
 
@@ -1317,11 +1322,11 @@ a.newer-posts:hover {
   font-size: 30px;
   text-align: center;
   line-height: 1.3;
-  color: #263959;
+  color: #ffffff;
 }
 
 .blog-tags h2 {
-  color: #263959;
+  color: #aaaaaa;
   margin: 10px 0;
 }
 
@@ -1341,15 +1346,15 @@ a.newer-posts:hover {
   color: #263959;
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #ecf0f1;
-  background-color: #fafafa;
+  border: 1px solid #aaaaaa;
+  background-color: #35b7ff;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
 
 .tags li a:hover {
-  background-color: #ecf0f1;
+  background-color: #35b7ff;
 }
 
 .tag-list span a {
@@ -1408,7 +1413,7 @@ a.newer-posts:hover {
             justify-content: space-between;
     width: 100%;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #aaaaaa;
     -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
   }
