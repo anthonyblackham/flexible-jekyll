@@ -3,9 +3,9 @@ layout: post
 title: How to Make a Blog
 date: 2020-11-09 5:30:00 -0800
 description: This post describes how to make a blog using Jekyll and Github Pages # Add post description (optional)
-img: blog-cover.png # Add image post (optional)
+img: blog-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [Blog, Writing]
+tags: [blog, writing]
 ---
 
 I work on a variety of projects and write copious notes and documentation along the way but never quite make it to the final step of documenting the final products. I've attempted to create blogs on many different platforms with varying levels of cost and complexity, but I've always come back to using static site generators.

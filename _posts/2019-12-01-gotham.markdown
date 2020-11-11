@@ -3,14 +3,14 @@ layout: post
 title: Gotham
 date: 2019-12-01 5:30:00 -0800
 description: Mapping the Giant Lighted Lucit Map of Gotham in Real Life # Add post description (optional)
-img: gotham-cover.png # Add image post (optional)
+img: gotham-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [batman, webmap, leaflet, qgis, qgis2web]
 ---
 
 I recently watched all 3 seasons of the 1966 Batman TV series with Adam West and Burt Ward as the dynamic duo. A recurring element in many of the episodes was the Giant Lighted Lucite Map of Gotham City..
 
-![Giant Lighted Lucite Map of Gotham]({{site.baseurl}}/assets/img/gotham-lucite-map.png)
+![Giant Lighted Lucite Map of Gotham]({{site.baseurl}}/assets/img/gotham-lucite-map.jpg)
 
 If you look closely at the map you can see that it is actually a map of St. Louis, Missouri. I took a screenshot of the map and georefererenced it in QGIS. I sketched out the features on the map from every episode it was used. I then used the [qgis2web](https://github.com/tomchadwin/qgis2web) plugin to generate a web map. There are some changes in the city since the map was drawn in 1966 but overall it matches up pretty well.
 
@@ -51,6 +51,4 @@ In the second season the map was repurposed as the Batmobile Tracking Map and ut
 
 ### Source Files
 
-The data used to create the map can be found at my repository here:
-
-[https://github.com/anthonyblackham/gotham](https://github.com/anthonyblackham/gotham)
+The data used to create the map can be found at my repository [here](https://github.com/anthonyblackham/gotham)
