@@ -1,0 +1,29 @@
+---
+layout: post
+title: Tree Tour
+date: 2016-7-29 5:30:00 -0800
+description: Mapping all the trees on a university campus # Add post description (optional)
+img: tree-tour-cover.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [trees, arcgis, cad]
+---
+
+I majored in geology at university but I spent a large amount of my time doing GIS work. I was originally maintaining the grounds but was fortunate to find my way into managing all of the CAD and GIS data for the grounds department. This entailed creating snow removal maps each winter, supervisor areas, updating all of the irrigation and water pipelines, and mapping all the trees and shrubs on campus. 
+
+When I started all of the trees and shrubs were mapped in CAD on a single DWG (by all, I mean mapped at the time, there are well over 100,000 trees and shrubs on campus). Over the course of 3 years I converted all 80,000 shrubs and trees in the CAD file into a GIS database. I generated a variety of scripts within AutoCAD Civil 3D to convert the university CAD basemap into a custom GIS campus basemap, which I later used in ArcGIS Collector for offline mapping. 
+
+Near graduation we were able to acquire some tablets for each supervisor to use in their day to day work. There were a few issues along the way due to the university still building out their enterprise GIS and collector still being in beta so I was largely on my own for most implementations. They've since resolved many of those issues and have carried on with the foundation I set up.
+
+This is the culmination of my work there:
+
+<div class="embed-container">
+  <iframe
+      src="https://byu.maps.arcgis.com/apps/webappviewer/index.html?id=71a4731b16c14a25b488e31c5b8ea038"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
+
+The source files can be found at my repository [here(TBD)]()
