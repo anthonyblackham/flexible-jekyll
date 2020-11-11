@@ -3,7 +3,7 @@ layout: post
 title: Hubble Legacy Field
 date: 2019-05-11 5:30:00 -0800
 description: Exploring the Hubble Legacy Field # Add post description (optional)
-img: hubble-legacy-field-cover.png # Add image post (optional)
+img: hubble-legacy-field-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [hubble, nasa, space, gdal]
 ---
@@ -28,13 +28,9 @@ Here is the result:
 
 ### Gathering Sources:
 
-The first step was to download the large image from here:
+The first step was to download the large image from [here](https://hubblesite.org/image/4492/news)
 
-[https://hubblesite.org/image/4492/news](https://hubblesite.org/image/4492/news)
-
-The second step was to get a library that converts the image into tiles and subsequently host them on a web map:
-
-[https://github.com/commenthol/gdal2tiles-leaflet](https://github.com/commenthol/gdal2tiles-leaflet)
+The second step was to get the [gdal2tiles]((https://github.com/commenthol/gdal2tiles-leaflet)) library that converts the image into tiles and subsequently host them on a web map
 
 Dependencies:
 
@@ -76,6 +72,4 @@ The easiest way to generate it is to replace the contents of the `test` folder w
 
 ### Source Files
 
-The data used to create the web map can be found at my repository here:
-
-[https://github.com/anthonyblackham/HubbleLegacyField](https://github.com/anthonyblackham/HubbleLegacyField)
+The data used to create the web map can be found at my repository [here](https://github.com/anthonyblackham/HubbleLegacyField)
