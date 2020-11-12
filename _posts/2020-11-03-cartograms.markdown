@@ -20,11 +20,11 @@ Sources for the images: 270 to win, Der Spiegel, NPR, FOX, ABC, PBS, NYT, NZZ, A
 
 ### Representation
 
-One popular election map that has shown up around the web posted by Trey Yingst on twitter is a 2016 results map that was being hung up in the west wing of the White House. 
+One popular election map that has shown up around the web posted by [Trey Yingst](https://twitter.com/treyyingst/status/862669407868391424?lang=en) on Twitter is a 2016 results map that was being hung up in the west wing of the White House. 
 
 ![2016 Election Map]({{site.baseurl}}/assets/img/cartogram-2016-election-map.jpg)
 
-The map is overwhelmingly covered in red but the electoral votes were just 306 to 232 or 57% to 43% of the votes respectively. The percentage of red shown on the map is far more than just 57%. The adjoining pointilism map by Ken Field is closer to representing the actual people who have voted rather than the land the live on.
+The map is overwhelmingly covered in red but the electoral votes were just 306 to 232 or 57% to 43% of the votes respectively. The percentage of red shown on the map is far more than just 57%. The adjoining pointilism map by Ken Field is closer to representing the actual people who have voted rather than the land they live on.
 
 Ken Field has a gallery of different ways to map election results that can be seen [here](https://www.arcgis.com/apps/MinimalGallery/index.html?appid=b3d1fe0e8814480993ff5ad8d0c62c32)
 

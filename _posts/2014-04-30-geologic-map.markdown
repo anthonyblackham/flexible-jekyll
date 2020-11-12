@@ -8,9 +8,9 @@ fig-caption: # Add figcaption (optional)
 tags: [geologic maps, geology, qgis2web, digitizing, arcgis, openlayers]
 ---
 
-The first opportunity I had to do some real GIS work was to work with the Utah Geological Survey on digitizing geologic maps. I worked with Zach Anderson in the Geologic Mapping group. This wasn't paid work but I did get some college credits for the project.
+The first opportunity I had to do real GIS work was with the Utah Geological Survey digitizing geologic maps. I worked with Zach Anderson in the Geologic Mapping group. He was very knowledgable and had a clever process for ditizing that used rule based topologies to insure accuracy.  It was a volunteer project but was able to acquire college credits for completing it.
 
-This was the publication I was working on and the final GIS data:
+This was the publication I digitized and the final processed GIS data:
 
 [Indian Peak Range Publication](https://ugspub.nr.utah.gov/publications/united_states_geological_survey/geologic_maps/i/i-1795.pdf)
 
@@ -19,6 +19,8 @@ This was the publication I was working on and the final GIS data:
 [Indian Peak Range Rest Service](https://webmaps.geology.utah.gov/arcgis/rest/services/GeolMap/30x60_Quads/MapServer/2183)
 
 I generated an openlayers web map of my work:
+
+[Link for Mobile Users](https://anthonyblackham.github.io/geologic-map/)
 
 <div class="embed-container">
   <iframe

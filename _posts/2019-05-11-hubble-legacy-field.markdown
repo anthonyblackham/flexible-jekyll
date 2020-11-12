@@ -5,10 +5,10 @@ date: 2019-05-11 5:30:00 -0800
 description: Exploring the Hubble Legacy Field # Add post description (optional)
 img: hubble-legacy-field-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [hubble, nasa, space, gdal]
+tags: [hubble, nasa, space, gdal, leaflet]
 ---
 
-In 2019 NASA released 16 years worth of hubble discoveries in one large image (1.2 GB!) that shows roughly 265000 galaxies. They named it the [Hubble Legacy Field](https://hubblesite.org/image/4492/news). It's enough to make one feel quite insignificant in the universe.
+In 2019 NASA released 16 years worth of hubble discoveries in one large image (1.2 GB!) that shows roughly 265000 galaxies. The area is roughly what your thumbnail would cover with your arm extending looking at the sky. They named it the [Hubble Legacy Field](https://hubblesite.org/image/4492/news). It's enough to make one feel quite insignificant in the universe.
 
 To fully experience the scale, the full resolution image should be viewed, however many people view content on phones that lack the memory and processing power to view a 25500x25500 resolution image.
 

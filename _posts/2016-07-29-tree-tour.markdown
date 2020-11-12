@@ -16,6 +16,8 @@ Near graduation we were able to acquire some tablets for each supervisor to use 
 
 This is the culmination of my work there:
 
+[Link for mobile users](https://byu.maps.arcgis.com/apps/webappviewer/index.html?id=71a4731b16c14a25b488e31c5b8ea038)
+
 <div class="embed-container">
   <iframe
       src="https://byu.maps.arcgis.com/apps/webappviewer/index.html?id=71a4731b16c14a25b488e31c5b8ea038"
