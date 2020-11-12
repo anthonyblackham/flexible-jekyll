@@ -8,7 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags: [railroad, leaflet, trains, historic, oregon]
 ---
 
-The Willamette Valley Southern Railway was a short-lived railway the ran from 1915 to 1933 from Oregon City to Mt. Angel. 
+The Willamette Valley Southern Railway was a short-lived railway that ran from 1915 to 1933 from Oregon City to Mt. Angel. 
 
 This is the schedule showing the time stamps from Richard Thompson's book Willamette Valley Railway. The stops with "S" next them were official stops, all the others were what were called flag stops where you'd basically hail the train like a taxi, otherwise the train would just keep moving.
 
