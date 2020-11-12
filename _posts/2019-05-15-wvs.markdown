@@ -1,0 +1,33 @@
+---
+layout: post
+title: Willamette Valley Southern Railway
+date: 2019-05-15 5:30:00 -0800
+description: Mapping the Willamette Valley Southern Railway (optional)
+img: wvs-cover.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [railroad, leaflet, trains, historic, oregon]
+---
+
+The Willamette Valley Southern Railway was a short-lived railway the ran from 1915 to 1933 from Oregon City to Mt. Angel. 
+
+This is the schedule showing the time stamps from Richard Thompson's book Willamette Valley Railway. The stops with "S" next them were official stops, all the others were what were called flag stops where you'd basically hail the train like a taxi, otherwise the train would just keep moving.
+
+![WVS Timetables]({{site.baseurl}}/assets/img/wvs-timetables.jpg)
+
+I was able to get a hold of some old railway plats and mapped out the original railway path and train stops. I typed out the time tables and joined them to the stops. I then generated a gpx file that was able to be used with the [Leaflet.TimeDimension](https://github.com/socib/Leaflet.TimeDimension) plugin. 
+
+This is the result:
+
+<div class="embed-container">
+  <iframe
+      src="https://anthonyblackham.github.io/wvs/example.html"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
+
+### Future
+
+History is full of abandoned and defunct railways, some with better documentation than others. Meticulously regenerating one web application out of some old plats and a time table isn't very scalable. One idea that I would like to try at some point in the future is to build an interactive time enabled web application that uses GTFS transit data. While you could use modern transit data, in theory you could create GTFS data for non-existent railways and view them as if they ran today. 

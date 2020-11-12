@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gotham
+title: The Giant Lighted Lucite Map of Gotham City
 date: 2019-12-01 5:30:00 -0800
 description: Mapping the Giant Lighted Lucit Map of Gotham in Real Life # Add post description (optional)
 img: gotham-cover.jpg # Add image post (optional)
