@@ -1,5 +1,5 @@
-# Anthony Blackham's Blog
+# Anthony Blackham's Portfolio
 
-You've reached my blog:
+You've reached my portfolio:
 
-[anthonyblackham.github.io/blog/](anthonyblackham.github.io/blog/)
+[anthonyblackham.com](anthonyblackham.com)
