@@ -8,7 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags: [geologic maps, geology, qgis2web, digitizing, arcgis, openlayers]
 ---
 
-The first opportunity I had to do real GIS work was with the Utah Geological Survey digitizing geologic maps. I worked with Zach Anderson in the Geologic Mapping group. He was very knowledgable and had a clever process for ditizing that used rule based topologies to insure accuracy.  It was a volunteer project but was able to acquire college credits for completing it.
+The first opportunity I had to do real GIS work was with the Utah Geological Survey digitizing geologic maps. I worked with Zach Anderson in the Geologic Mapping group. He was very knowledgeable and had a clever process for ditizing that used rule-based topologies to ensure accuracy.  It was a volunteer project but I was able to acquire college credit for completing it.
 
 This was the publication I digitized and the final processed GIS data:
 
@@ -36,4 +36,6 @@ I worked on a few projects with them and the following summer of 2015 I was able
 
 [Utah Geological Survey Website](https://geology.utah.gov/)
 
-Marshall was great to work under and was patient with my lack of experience in web development. He helped me to figure things out on my own and in the end we came up with something to be proud of. Marshall has done a great job building and maintaining the UGS site, it's definitely one of if not the best geological survey website in the United States.
+Marshall was great to work under and was patient with my lack of experience in web development. He helped me to figure things out on my own and in the end we came up with something to be proud of. Marshall has done a great job building and maintaining the UGS site, it's definitely one of if not the best geological survey website in the United States. 
+
+My internship helped set me on my current professional path. I would have loved to work there permanently but some other opportunities came up that took me elsewhere. 
