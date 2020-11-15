@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Make a Blog
-date: 2020-11-09 5:30:00 -0800
+date: 2014-01-01 5:30:00 -0800
 description: This post describes how to make a blog using Jekyll and Github Pages # Add post description (optional)
 img: blog-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
