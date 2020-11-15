@@ -53,6 +53,6 @@ For the grid and hex cartograms I modified cartogram data sets from ESRI:
 
 [USA Hex Cartogram](https://esribizteam.maps.arcgis.com/home/item.html?id=15d500e21356461cb78cddc105408b26)
 
-To generate the continuous cartogram I joined the voter weight to the census state boundaries layer and used the [cartogram3 plugin](https://github.com/austromorph/cartogram3) in QGIS to iterate the weight value with the shape boundaries. States with larger voting weights got larger and states with smaller voting weights got smaller.
+To generate the continuous cartogram I joined the voter weight to the census state boundaries layer and used the [cartogram3 plugin](https://github.com/austromorph/cartogram3) in QGIS to iterate the weight value with the shape boundaries. States with larger voting weights grew and states with smaller voting weights shrunk.
 
-The source data can be found at my repository here
+The source data can be found at my repository [here](https://github.com/anthonyblackham/cartograms)
