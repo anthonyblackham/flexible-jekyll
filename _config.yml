@@ -1,6 +1,7 @@
 title: Anthony Blackham
 description: > # this means to ignore newlines until "baseurl:"
-Welcome to my portfolio. Here I post different projects I've worked on both personally and professionally.
+  Welcome to my portfolio. Here I post different projects I've worked 
+  on both personally and professionally.
 permalink: ':title/'
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://anthonyblackham.github.io/blog" # the base hostname & protocol for your site, e.g. http://example.com
