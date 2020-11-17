@@ -177,7 +177,7 @@ git add -A
 git commit -m "Initial Commits"
 git push origin master
 ```
-If everything goes according to plan your site will shortly show up at the domain you configured, which in my case is [https://anthonyblackham.github.io/blog/](https://anthonyblackham.github.io/blog/)
+If everything goes according to plan your site will shortly show up at the domain you configured, which in my case is [https://anthonyblackham.github.io](https://anthonyblackham.github.io)
 
 ### Summary
 
