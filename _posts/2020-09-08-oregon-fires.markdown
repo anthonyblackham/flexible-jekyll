@@ -19,9 +19,9 @@ This is what it looked like outside (no camera filters), it was darker red close
 
 I wanted to see what the progress of the fire looked like over time so I located some data to help create a timelapse.
 
-The Geostationary Operational Environmental Satellite (GOES) is a satellite or rather a constellation of geostationary satellites that pull in various forms of data that are used by scientific and meterological groups.
+The Geostationary Operational Environmental Satellite (GOES) is a satellite or rather a constellation of geostationary satellites that pull in various forms of data that are used by scientific and meteorological groups.
 
-The GOES-17 satellite takes a picture of the Pacific Ocean and the Western US roughly every 5-15 minutes depending on the mode the imager is running. There are archives of scientific netcdf data but when generating timelapses it can be burdensome to process that much data on consumer based computers. Thankfully NASA developed a Web Map Tile Service called Global Imagery Browse Services (GIBS) where you can pull in a feed of recent satellite imagery that can be coupled with QGIS' temporal controller to generate a frames for a timelapse.
+The GOES-17 satellite takes a picture of the Pacific Ocean and the Western US roughly every 5-15 minutes depending on the mode the imager is running. There are archives of scientific netcdf data but when generating timelapses it can be burdensome to process that much data on consumer based computers. Thankfully NASA developed a Web Map Tile Service called Global Imagery Browse Services (GIBS) where you can pull in a feed of recent satellite imagery that can be coupled with temporal controller in QGIS to generate frames for a timelapse.
 
 This is the endpoint to add the wmts in QGIS:
 

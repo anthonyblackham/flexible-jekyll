@@ -12,7 +12,7 @@ My friend was in the market for a new home and knowing my background with geolog
 
 ### Hazard Map:
 
-A few options were by Utah Lake which is along the Wasatch Fault Sytem. Low water tables mixed with seismic activity means liquefaction can be a real possibility. The Utah Geological Survey hosts various hazard maps and resultant GIS data sets that can be used. The geologic data sets come with a disclaimer of accuracy since many of the current GIS data sets are digitzed from older geologic studies.
+A few options were by Utah Lake which is along the Wasatch Fault Sytem. Proximity to the water table mixed with seismic activity means liquefaction can be a real possibility. The Utah Geological Survey hosts various hazard maps and resultant GIS data sets that can be used. The geologic data sets come with a disclaimer of accuracy since many of the current GIS data sets are digitzed from older geologic studies.
 
 Utah County Liquefaction Potential Publication:
 
