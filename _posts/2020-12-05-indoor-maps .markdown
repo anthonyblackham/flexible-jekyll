@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Indoor Maps
-date: 2020-12-06 5:30:00 -0800
+date: 2020-11-03 5:30:00 -0800
 description: Indoor Maps # Add post description (optional)
 img: indoor-maps-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
@@ -10,7 +10,7 @@ tags: [leaflet, indoor, maps]
 
 I've created landscaping and utility data but haven't done much with indoor maps. I delved into a few indoor mapping projects in university with the library floor plans, but there were some issues with data consistency and georeferencing that made it challenging. 
 
-Instead of going through the whole process of georeferencing a floorplan over a house on aerial imagery, I thought that this would be a fun experiment to try out a relative coordinate system that isn't directly tied to the planet or in other words - a non-geographical coordinate system. 
+Instead of going through the whole process of georeferencing something with a high level of precision with the relatively small footprint of a floorplan, I thought that this would be a fun experiment to try out a relative coordinate system that isn't directly tied to the planet i.e. a non-geographical coordinate system. 
 
 This is fundamentally similar to the [Hubble Legacy Field](https://anthonyblackham.com/hubble-legacy-field/) project that I did but it goes a few steps further in creating more interactive features.
 
@@ -40,43 +40,34 @@ Default html code:
    <body></body>
 </html>
 ```
-We'll add some configs, a title, and the leaflet libraries in the head:
+
+We'll add a title: 
 
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-	
-	<title>Non Geographic Map</title>
+<title>Non Geographic Map</title>
+```
+some default html configs:
 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-</head>
+```html
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 ```
 
-Next we'll add the map div and initialize a basic map, and we'll also add some style configs to open it full screen
-
+and the leaflet libraries:
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-	
-	<title>Non Geographic Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+```
 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+Next we'll add the map div 
 
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+```
+<div id='map'></div>
+```
+make the map full screen:
 
-	<style>
+```
 		html, body {
 			height: 100%;
 			margin: 0;
@@ -86,7 +77,45 @@ Next we'll add the map div and initialize a basic map, and we'll also add some s
 			height: 100%;
 		}
 }
-	</style>
+```
+
+initialize the map using a simple coordinate system:
+
+```
+var map = L.map('map', {
+	crs: L.CRS.Simple,
+	minZoom: 0,
+});
+```
+
+This should be our full HTML code so far:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Non Geographic Map</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+<style>
+	html, body {
+		height: 100%;
+		margin: 0;
+	}
+	#map {
+		width: 100%;
+		height: 100%;
+	}
+}
+</style>
 
 </head>
 
@@ -282,7 +311,7 @@ Now we'll set the layers in our basemap control:
 	};
 ```
 
-and initialize them on the map
+and initialize them on the map (note we took the .addTo(map) out of the L1Footprint variable because this is now being handled by the layer control)
 
 ```
 L.control.layers(baseMaps).addTo(map);
@@ -320,17 +349,17 @@ With a little bit of rearranging, this is our full html file so far:
 	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 	
-	<style>
-		html, body {
-			height: 100%;
-			margin: 0;
-		}
-		#map {
-			width: 100%;
-			height: 100%;
-		}
+<style>
+	html, body {
+		height: 100%;
+		margin: 0;
+	}
+	#map {
+		width: 100%;
+		height: 100%;
+	}
 }
-	</style>
+</style>
 
 </head>
 
