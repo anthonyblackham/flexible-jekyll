@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Indoor Maps
-date: 2020-11-03 5:30:00 -0800
+date: 2020-12-06 5:30:00 -0800
 description: Indoor Maps # Add post description (optional)
 img: indoor-maps-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
@@ -10,7 +10,7 @@ tags: [leaflet, indoor, maps]
 
 I've created landscaping and utility data but haven't done much with indoor maps. I delved into a few indoor mapping projects in university with the library floor plans, but there were some issues with data consistency and georeferencing that made it challenging. 
 
-Instead of going through the whole process of georeferencing something with a high level of precision with the relatively small footprint of a floorplan, I thought that this would be a fun experiment to try out a relative coordinate system that isn't directly tied to the planet i.e. a non-geographical coordinate system. 
+Instead of going through the whole process of georeferencing a floorplan over a house on aerial imagery, I thought that this would be a fun experiment to try out a relative coordinate system that isn't directly tied to the planet or in other words - a non-geographical coordinate system. 
 
 This is fundamentally similar to the [Hubble Legacy Field](https://anthonyblackham.com/hubble-legacy-field/) project that I did but it goes a few steps further in creating more interactive features.
 
@@ -68,14 +68,14 @@ Next we'll add the map div
 make the map full screen:
 
 ```
-		html, body {
-			height: 100%;
-			margin: 0;
-		}
-		#map {
-			width: 100%;
-			height: 100%;
-		}
+html, body {
+	height: 100%;
+	margin: 0;
+}
+#map {
+	width: 100%;
+	height: 100%;
+}
 }
 ```
 
@@ -305,10 +305,10 @@ Leaflet has two mechanisms in the layer controls, baseMaps and overlayMaps, (see
 Now we'll set the layers in our basemap control:
 
 ```html
-	var baseMaps = {
+var baseMaps = {
 	"Level 1": L1,
 	"Level 2": L2
-	};
+};
 ```
 
 and initialize them on the map (note we took the .addTo(map) out of the L1Footprint variable because this is now being handled by the layer control)
