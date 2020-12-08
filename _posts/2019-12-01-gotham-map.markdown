@@ -44,6 +44,7 @@ Bonus Maps:
 
 - S3 E25 19:12 alternate Gotham map
 - S2 E37 00:30 rare art map
+- [Gotham City Map](https://www.arcgis.com/home/webmap/viewer.html?webmap=97bd9518b1714e8c870a043e9c216cef)
 
 ### Future Ideas
 
