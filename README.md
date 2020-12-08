@@ -2,4 +2,4 @@
 
 You've reached my portfolio:
 
-[anthonyblackham.com](anthonyblackham.com)
+[anthonyblackham.com](https://anthonyblackham.com/)
