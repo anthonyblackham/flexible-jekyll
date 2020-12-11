@@ -10,11 +10,11 @@ tags: [oregon city, leaflet, qgis2web, historic, oregon, mcloughlin]
 
 Dr. John McLoughlin was born in Quebec in 1784, and found himself appointed superintendent of the Columbia District at the Hudson Bay Company in 1824 and subsequently laid a claim at Willamette Falls for the Hudson Bay company around 1829. McLoughlin had the claim [surveyed](https://www.oregonhistoryproject.org/articles/historical-records/mcloughlin-land-survey-claim-1843/#.X9OflNhKiUk) by J. M. Hudspeth in 1843. The claim was further was surveyed by Jesse Applegate in 1844 (when Oregon City was incorporated) and Robert Short in 1849 and recorded in [county records](http://cmap.clackamas.us/survey/SDImages/2S2E/31/0002.TIF) in 1850.
 
-![Oregon City Plat](oregon-city-mcloughlin.jpg)
+![Dr. John Mcloughlin]({{site.baseurl}}/assets/img/oregon-city-mcloughlin.jpg)
 
 The original copy of the Oregon City plat is located in the Museum of the Oregon Territory.
 
-![Oregon City Plat](oregon-city-plat.jpg)
+![Oregon City Plat]({{site.baseurl}}/assets/img/oregon-city-plat.jpg)
 
 ### The Donation Land Claim Act
 
