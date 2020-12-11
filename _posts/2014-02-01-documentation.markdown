@@ -12,14 +12,22 @@ Documentation is tedious to write but having the right tools and frameworks can 
 
 Most of the documentation I've written has coincided with my project repositories on Github, so naturally I find myself writing notes in the Github wiki. Github has some options to improve the style of the wiki but sometimes it isn't quite enough. 
 
-There are lots of different frameworks for documentation. Some examples include Sphinx, Jekyll, and MkDocs. Since Github wikis are markdown based I have found it simplest to integrate with MkDocs. The two MkDocs themes I prefer are:
+There are lots of different frameworks for documentation. Some examples include Sphinx, Jekyll, and MkDocs which if you remember from the [last post](https://anthonyblackham.com/making-a-blog/) are static site generators. Since Github wikis are markdown based and MkDocs was built with markdown in mind, MkDocs is my preferred choice. 
+
+These are the MkDocs themes I recommend:
 
 - [Read the Docs](https://readthedocs.org/)
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
-If you're using your Github wiki as a starting point for your documentation, there are a couple options when migrating to a different framework. You can continue to make your edits on the wiki and sync it to your framework or you can just migrate your wiki to its own repo and manage it through there with commits and pull requests. You can use also use them completely outside of Github as well but for the purpose of this guide we'll assume we are still going to be using github for editing and/or hosting our documentation.
+If you started with a Github wiki and want to use a static site generator like Mkdocs, there are a few ways to accomplish that:
 
-Instead of going through the tedious installation and configuration process here, I've added them to both themes as an example for you to decide which would work better for your project.
+- continue to make your edits on the Github wiki and sync it with MkDocs
+- migrate your wiki to its own repository
+- migrate your wiki somewhere else
+
+For the purpose of the following guides we'll assume we are still going to be using Github for editing and/or hosting our documentation.
+
+Instead of going through the tedious installation and configuration process here, I've added the documentation for setting up both themes below so you can see what they look like in practice.
 
 - [Read the Docs](https://anthonyblackham.com/readthedocs)
 - [Material for MkDocs](https://anthonyblackham.com/mkdocs-material)
