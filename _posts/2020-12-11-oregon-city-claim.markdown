@@ -2,7 +2,7 @@
 layout: post
 title: The Oregon City Claim
 date: 2020-12-11 5:30:00 -0800
-description: Mapping McLoughin's Oregon City Claim (optional)
+description: Mapping McLoughin's Oregon City Claim # (optional)
 img: oregon-city-claim-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [oregon city, leaflet, qgis2web, historic, oregon, mcloughlin]
@@ -32,7 +32,7 @@ Samuel Thurston had gone to congress with false claims about John McLoughlin and
 
 During the rest of McLoughlin's life nothing was really done about his claim being taken, and he passed away in 1857. Only on October 17,1862, 5 years after he had died, did the state confirm title to his legatees under his will (son David McLoughlin, daughter Eloisa and her husband Daniel Harvey) for the cost of $1000 into the university fund (sans Abernethy Island). This was paid by Daniel Harvey.
 
-I was curious what was left of the Oregon City Claim to return in 1862 and located the [Oregon Territorial legislative assembly records](https://babel.hathitrust.org/cgi/pt?id=mdp.35112203963139;view=1up;seq=40) from 1851 (H.B. No. 39, H.B. No 54 - Passed 1/29/1851) along with [Donation Land Claim records](https://glorecords.blm.gov/details/patent/default.aspx?accession=ORORAA%20043940&docClass=SER&sid=54ha5yos.fxl) from the GLO where they confirmed title to specific lots in the Oregon City Claim. These were the lots that had been sold by Mcloughlin prior to the Donatian Land Claim Act so anything left over - assuming the state hadn't sold it between 1850 and 1862 - should be what was given back to the legatees. I geo-referenced the 1850 Oregon City claim and used it as my basepoint for mapping the properties. 
+I was curious what was left of the Oregon City Claim to return in 1862 and located the [Oregon Territorial legislative assembly records](https://babel.hathitrust.org/cgi/pt?id=mdp.35112203963139;view=1up;seq=40) from 1851 (H.B. No. 39, H.B. No 54 - Passed 1/29/1851) along with [Donation Land Claim records](https://glorecords.blm.gov/details/patent/default.aspx?accession=ORORAA%20043940&docClass=SER&sid=54ha5yos.fxl) from the GLO where they confirmed title to specific lots in the Oregon City Claim. These were the lots that had been sold by Mcloughlin prior to the Donation Land Claim Act so anything left over - assuming the state hadn't sold it between 1850 and 1862 - should be what was given back to the legatees. I geo-referenced the 1850 Oregon City claim and used it as my basepoint for mapping the properties. 
 
 This was the final result:
 
