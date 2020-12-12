@@ -5,7 +5,7 @@ date: 2014-04-30 5:30:00 -0800
 description: Digitizing geologic maps # Add post description (optional)
 img: geologic-map-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [geologic maps, geology, qgis2web, digitizing, arcgis, openlayers]
+tags: [geologic maps, geology, qgis, qgis2web, digitizing, arcgis, openlayers]
 ---
 
 The first opportunity I had to do real GIS work was with the Utah Geological Survey digitizing geologic maps. I worked with Zach Anderson in the Geologic Mapping group. He was very knowledgeable and had a clever process for digitizing that used rule-based topologies to ensure accuracy.  It was a volunteer project but I was able to acquire college credit for completing it.
