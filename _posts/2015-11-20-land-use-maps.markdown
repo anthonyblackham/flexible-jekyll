@@ -8,7 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags: [qgis, leaflet, qgis2web, historic, eleuthera, nature conservancy]
 ---
 
-In 1960's and 1970s a survey was done by the Directorate of Overseas Surveys of the Bahamas. It combined vegetation, land ownership, and land use and was combined in a series of reports titled ["The Land Resources of the Bahamas"](https://edepot.wur.nl/480066). The agency closed in 2001 and the archives are now held in the National Collection of Aerial Photography [(NCAP)](https://ncap.org.uk/).
+In 1960's and 1970's a survey was done of the Bahamas by the Directorate of Overseas Surveys. It combined vegetation, land ownership, and land use and was compiled in a series of reports titled ["The Land Resources of the Bahamas"](https://edepot.wur.nl/480066). The agency closed in 2001 and the archives are now held in the National Collection of Aerial Photography [(NCAP)](https://ncap.org.uk/).
 
 The Nature Conservancy acquired high quality scans of the maps associated with the land use reports and our group's task was to help georeference and digitize the maps. My assignment was the island of Eleuthera.
 
