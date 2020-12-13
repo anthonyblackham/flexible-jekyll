@@ -1,0 +1,37 @@
+---
+layout: post
+title: The Sun
+date: 2020-12-12 5:30:00 -0800
+description: Creating a timelapse of the sun for one year # (optional)
+img: sun-cover.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [space, sun, nasa, ffmpeg, timelapse]
+---
+
+Staring at the sun is not advised... unless you have a fancy space telescope that takes pictures of the sun for you. The [Solar Dynamics Observatory](https://sdo.gsfc.nasa.gov/) has been providing real time data of the sun for over 10 years and NASA makes the data freely available to the public (as it should, being publicly funded and all). There are 3 different sensors that pull in data:
+
+- Atmospheric Imaging Assembly (AIA)
+- EUV Variability Experiment (EVE)
+- Helioseismic and Magnetic Imager (HMI)
+
+The GOES-17 satellite I pulled data from for the [Oregon Fires](https://anthonyblackham.com/oregon-fires/) timelapse also includes a sensor for solar data but the SDO provides higher quality imagery.
+
+I wanted to generate a timelapse of the sun for the last year in the highest quality available, so I generated a few scripts to acquire the AIA images from the SDO website:
+
+This script downloads all of the 4096x4096 images for the 171 angstrom wavelength. (caution! will take a long time and generate 600+GB of data)
+
+```
+while true; do
+wget -T 15 -c -r -l2 --no-parent --tries=10 -nc -A "*4096_0171.jpg" https://sdo.gsfc.nasa.gov/assets/img/browse/2020/01/ && break
+done
+```
+
+Once I pulled all the data together I put it together using ffmpeg:
+
+```
+ffmpeg -r 60 -f image2 -s 4096x4096 -pattern_type glob -i '??/*.jpg' -vcodec libx264 -crf 25 -pix_fmt yuv420p 20200101.mp4
+```
+
+This is the final result:
+
+TBD!
