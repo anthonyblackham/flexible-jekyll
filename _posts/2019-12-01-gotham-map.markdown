@@ -26,6 +26,19 @@ You can see the map in action below:
   </iframe>
 </div>
 
+Here is an alternate map based on the 1998 version created by Eliot Brown for DC comics, GIS conversion by Danielle Pugh
+
+<div class="embed-container">
+  <iframe
+      src="https://anthonyblackham.com/gotham-1998/#13/39.4553/-74.2737"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
+
+
 Here is a rough summary of episodes and timestamps for when the map showed up in the series:
 
 - S1 E07 11:45, 18:29 (Mr. Freeze)
@@ -44,7 +57,7 @@ Bonus Maps:
 
 - S3 E25 19:12 alternate Gotham map
 - S2 E37 00:30 rare art map
-- [Gotham City Map](https://www.arcgis.com/home/webmap/viewer.html?webmap=97bd9518b1714e8c870a043e9c216cef)
+- [Gotham City Map](https://www.arcgis.com/apps/opsdashboard/index.html#/03bdb383c96a4a2ba41c30daccb4730f)
 
 ### Future Ideas
 
