@@ -30,7 +30,7 @@ Here is an alternate map based on the 1998 version created by Eliot Brown for DC
 
 <div class="embed-container">
   <iframe
-      src="https://anthonyblackham.com/gotham-1998/#13/39.4553/-74.2737"
+      src="https://anthonyblackham.com/gotham-1998/#13/39.4493/-74.1878"
       width="700"
       height="480"
       frameborder="0"
