@@ -6,6 +6,7 @@ description: Creating a timelapse of the sun for one year # (optional)
 img: sun-cover.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [space, sun, nasa, ffmpeg, timelapse]
+youtubeId: omeX1-ZFRXw
 ---
 
 Staring at the sun is not advised... unless you have a fancy space telescope that takes pictures of the sun for you. The [Solar Dynamics Observatory](https://sdo.gsfc.nasa.gov/) has been providing real time data of the sun for over 10 years and NASA makes the data freely available to the public (as it should, being publicly funded and all). There are 3 different sensors that pull in data:
@@ -32,6 +33,12 @@ Once I pulled all the data together I put it together using ffmpeg:
 ffmpeg -r 60 -f image2 -s 4096x4096 -pattern_type glob -i '??/*.jpg' -vcodec libx264 -crf 25 -pix_fmt yuv420p 20200101.mp4
 ```
 
+Then I used ffmpeg to mux in a music track:
+
+```
+ffmpeg -i video.mp4 -i audio.mp3 -c:v copy -c:a aac output.mp4
+```
+
 This is the final result:
 
-TBD!
+{% include youtubePlayer.html id=page.youtubeId %}
