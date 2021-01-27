@@ -36,7 +36,15 @@ There were at least 3 archaeological digs I know of but likely more:
 
 Now that we've delved into the local history, let's plot the location of where I found the porcelain and see how it comes together:
 
-insert map here
+<div class="embed-container">
+  <iframe
+      src="https://anthonyblackham.com/champoeg-history/"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
 
 The proximity to the most recent archaeological dig and the help of the local molepeople bringing the porcelain to the surface are convincing evidence of correlation. For further evidence there is a [thesis](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/7h149t836?locale=en) in 1986 by Lou Ann Speulda Nichols (again under Mr. Brauner) detailing some of the porcelain found. Also another in 2019 again under Brauner by [Cayla Hill](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/8049gb614?locale=en) showing some similar artifacts.
 
