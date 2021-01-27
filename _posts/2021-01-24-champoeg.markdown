@@ -40,7 +40,7 @@ Now that we've delved into the local history, let's plot the location of where I
       width="700"
       height="480"
       frameborder="0"
-      allowfullscreen="">
+      allowfullscreen=""
       scrolling="no"> 
   </iframe>
 </div>
