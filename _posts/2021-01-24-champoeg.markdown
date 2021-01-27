@@ -39,8 +39,8 @@ Now that we've delved into the local history, let's plot the location of where I
 <div class="embed-container">
   <iframe
       src="https://anthonyblackham.com/champoeg-history/"
-      width="1920"
-      height="1080"
+      width="700"
+      height="480"
       frameborder="0"
       allowfullscreen="">
   </iframe>
