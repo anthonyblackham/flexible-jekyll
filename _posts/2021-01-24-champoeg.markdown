@@ -20,7 +20,7 @@ I've overlaid the some of the old Champoeg town plats and claims in the map belo
 
 <div class="embed-container">
   <iframe
-      src="http://anthonyblackham.com/champoeg-history/maps/champoeg.html"
+      src="https://anthonyblackham.com/champoeg-history/maps/champoeg.html"
       width="700"
       height="480"
       frameborder="0"
@@ -52,7 +52,7 @@ Now that we've established the local history, let's plot the location of where I
 
 <div class="embed-container">
   <iframe
-      src="http://anthonyblackham.com/champoeg-history/maps/digsite.html"
+      src="https://anthonyblackham.com/champoeg-history/maps/digsite.html"
       width="700"
       height="480"
       frameborder="0"
