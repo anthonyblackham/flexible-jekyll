@@ -8,35 +8,51 @@ fig-caption: # Add figcaption (optional)
 tags: [oregon, history, leaflet, champoeg]
 ---
 
-I try to get out as much as I can and often find myself going down a rabbit hole revolving around the history of the places I go. 
-
 Over the weekend something on the ground caught my eye. It looked like a piece of garbage but on a closer inspection turned out to be something more interesting. It was a piece of porcelain. 
 
 Being a minimalist, the idea of having a china cabinet in my home is apalling and has never interested me in the slightest. However, finding some china in the middle of a field with seemingly nothing nearby piqued my interest. Come to find out I was standing on a town site that had washed away 160 years ago. 
 
-Originally home to the Kalapuya Indians who were removed to the Grand Ronde reservation circa ~1856, Robert Newell platted the [town of Champoeg](https://secure.co.marion.or.us/weblink/DocView.aspx?id=4075848) (pronounced shampoo-EE) in 1853 though it may have been surveyed as early as 1844 by Jesse Applegate who surveyed [Oregon City](https://anthonyblackham.com/oregon-city-claim/) around the same time. 
+Champoeg (pronounced shampoo-EE), originally home to the Kalapuya Indians who were removed to the Grand Ronde reservation circa ~1856, was founded by Robert Newell and Andre Longtain in 1844. The town site was surveyed by Jessie Applegate around the same time period (if his name sounds familiar it's because he also surveyed the [Oregon City Claim](https://anthonyblackham.com/oregon-city-claim/)). S. D. Snowden was enlisted in 1852 to survey the townsite and it was [recorded](https://secure.co.marion.or.us/weblink/DocView.aspx?id=4075848) in Marion county in 1853.
 
-Robert Newell's claim can also be seen on the 1852 [GLO plat](https://glorecords.blm.gov/details/patent/default.aspx?accession=OROCAA%20002787&docClass=SER)
+Robert Newell's claim can be seen on the 1852 [GLO plat](https://glorecords.blm.gov/details/patent/default.aspx?accession=OROCAA%20002787&docClass=SER)
+
+I've overlaid the some of the old Champoeg town plats and claims in the map below.
+
+<div class="embed-container">
+  <iframe
+      src="http://anthonyblackham.com/champoeg-history/maps/champoeg.html"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
 
 Champoeg is central to Oregon's history in that it was the site of the first vote to form a provisional government on May 2, 1843. There is some [dispute](https://pamplinmedia.com/cr/28-opinion/322588-201736-oregon-perpetuates-myth-of-close-statehood-vote) on the number of voters. John McLoughlin while not present at the vote, recommended against forming a provisional government. In 1901 Francois X. Matthieu, the last surviving voter, located the original site of the meeting and the Oregon Historical Society placed an [obelisk](https://en.wikipedia.org/wiki/Champoeg,_Oregon#/media/File:Champoeg_Monument.jpg) engraved with the names of those who voted yes to establish a provisional government. 
+
+![Champoeg Monument]({{site.baseurl}}/assets/img/champoeg-monument.jpg)
+
+*In 1900 Top left from left, Gus Hoefer, C. W. A. Jette, George H. Himes,  Francis X. Matthieu, Gov. Theodore T. Greer locating site of the first vote- photo by James H. Eaton courtesy of OHS, bottom left, 5/2/1901 monument unveiling, photo by Hon Otto Schumann who also designed the monument, right 1906 or earlier showing Francis X. Matthieu next to the monument, photo by Nelsen*
 
 In 1861 the Willamette River flooded and washed away the town site. There were some meager attempts to rebuild but with the advent of the rail and subsequent floods it never fully recovered. 
 
 In 1913 Champoeg was established as a "Provisional Government Park" and subsequently a state park in 1943. The visitor's center was built in 1977 on the site of Donald Manson's house. His barn, which had been built in 1862 using reclaimed timber from the flood, was restored in 1992.
 
-There were at least 3 archaeological digs I know of but likely more:
+There were a variety of archaelogical digs and surveys started in the 1960's from a commissioned study of the park by John A. Hussey at the request of the Oregon State Highway Commission and Oregon Historical Society. Initial archaeological work was done by Pual Nesbitt and subsequently John Atherton and David Brauner
 
-[1973-1974](https://www.flickr.com/photos/gbaku/albums/72157600318881469) with John Atherton - Former archaeologist for Oregon State University
+Here are a few references to some of the more notable digs.
 
-[2002 or earlier?](https://www.archaeologychannel.org/video-guide-summary/138-uncovering-a-past-champoeg-park) David Brauner - Former archaeologist for Oregon State University
+[1973-1974](https://www.flickr.com/photos/gbaku/albums/72157600318881469) John Atherton - Oregon State University
 
-[2013-2014](https://traveloregon.com/things-to-do/culture-history/historic-sites-oregon-trail/digging-oregons-history/) also David Brauner
+[1991-1992](https://www.archaeologychannel.org/video-guide-summary/138-uncovering-a-past-champoeg-park) David Brauner - Oregon State University
 
-Now that we've delved into the local history, let's plot the location of where I found the porcelain and see how it comes together. The left side is imagery from 2014 and the right side is imagery from 2019 - you can slide it back and forth to compare the dig site before and after it was buried.
+[2013-2014](https://traveloregon.com/things-to-do/culture-history/historic-sites-oregon-trail/digging-oregons-history/) David Brauner
+
+Now that we've established the local history, let's plot the location of where I found the porcelain and see how it comes together. The left side is imagery from 2014 and the right side is imagery from 2019 - you can slide it back and forth to compare the dig site before and after it was buried.
 
 <div class="embed-container">
   <iframe
-      src="https://anthonyblackham.com/champoeg-history/"
+      src="http://anthonyblackham.com/champoeg-history/maps/digsite.html"
       width="700"
       height="480"
       frameborder="0"
@@ -45,10 +61,10 @@ Now that we've delved into the local history, let's plot the location of where I
   </iframe>
 </div>
 
-The proximity to the most recent archaeological dig and the help of the local molepeople bringing the porcelain to the surface are convincing evidence of correlation. For further evidence there is a [thesis](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/7h149t836?locale=en) in 1986 by Lou Ann Speulda Nichols (again under Mr. Brauner) detailing some of the porcelain found. Also another in 2019 again under Brauner by [Cayla Hill](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/8049gb614?locale=en) showing some similar artifacts.
+With the help of the local mole-people in bringing the porcelain to the surface and the proximity to the most recent archaeological dig, odds are pretty good the porcelain isn't from someone's recent picnic . For further evidence there is a [thesis](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/7h149t836?locale=en) in 1986 by Lou Ann Speulda Nicholls detailing some of the porcelain found. Also another in 2019 by [Cayla Hill](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/8049gb614?locale=en) showing some similar artifacts.
 
-Harriet Munnick who was also a party shown in the 1973 dig happens to have [written a book](https://books.google.com/books/about/French_Prairie_Ceramics.html?id=aHUvp6nmrk4C) all about transfer printed earthenwares in the French Prairie. Some of her collection can be viewed online at the [St. Paul Mission Historical Society](https://spmhs.pastperfectonline.com/webobject)
+Harriet Munnick who was a party in the 1973 dig happens to have [written a book](https://books.google.com/books/about/French_Prairie_Ceramics.html?id=aHUvp6nmrk4C) all about transfer printed earthenwares in the French Prairie. Some of her collection can be viewed online at the [St. Paul Mission Historical Society](https://spmhs.pastperfectonline.com/webobject)
 
-I left it in place and [notified the state park rangers](https://www.oregon.gov/oprd/OH/pages/archaeology.aspx) to contact the appropriate people to collect it. Maybe they have the rest of the plate in OSU's collections and it's missing the exact piece I found and they can carefully slide it in like the last piece of a puzzle. 
+I left the porcelain in place and [notified the state park rangers](https://www.oregon.gov/oprd/OH/pages/archaeology.aspx) to contact the appropriate people to collect it. Maybe there is a plate in the OSU archives that is missing a piece the exact same shape and size of the piece we found.
 
 What started out as a weekend walk turned into an interesting trip deeper into Oregon's history. I'm sure it won't be the last. For the record, I still have no interest in owning a china cabinet - it belongs in a museum.
