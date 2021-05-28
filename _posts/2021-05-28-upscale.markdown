@@ -8,17 +8,17 @@ fig-caption: # Add figcaption (optional)
 tags: [ai, artificial intelligence, machine learning, esrgan]
 ---
 
-As our screens get bigger and add more pixels, our old content stays the same. Grandma's 8mm hand cranked film of her swinging in the tree starts to look pretty rough compared to the latest 8K footage of a tardigrade's frosty breath in the deep arctic. Televisions aren't the only thing that have improved - new and unique methods of image processing using artificial intelligence are starting to help bridge the gap between [the old and the new]((https://en.wikipedia.org/wiki/They_Shall_Not_Grow_Old)). New monitors come with processing units that will upscale and modify content on the fly. In the video gaming world you have Nvidia with DLSS and AMD with FidelityFX both aim to provide a real time "super-resolution" upscale. 
+As our screens get bigger and add more pixels, our old content stays the same. Grandma's 8mm hand cranked film of her swinging in the tree starts to look pretty rough compared to the latest 8K footage of a tardigrade's frosty breath in the deep arctic. Televisions aren't the only thing that have improved - new and unique methods of image processing using artificial intelligence are starting to help bridge the gap between [the old and the new]((https://en.wikipedia.org/wiki/They_Shall_Not_Grow_Old)). New monitors come with processing units that will upscale and modify content on the fly. In the video gaming world you have Nvidia with DLSS and AMD with FidelityFX both aiming to provide a real time "super-resolution" upscale. 
 
 I was recently watching Redwall (a cartoon based on Brian Jacques' book series) on my 4k television and was glaringly reminded that the show was originally produced for use over the air on a CRT television. I had seen [some posts](https://www.theverge.com/2019/4/18/18311287/ai-upscaling-algorithms-video-games-mods-modding-esrgan-gigapixel) in the video game emulation world about a machine learning model for upscaling old video game textures, and video games are just interactive cartoons so it should work on old cartoons too... right? Let's find out.
 
-Before we jump right into coding, some historic backround on broadcast television is needed. Prior to the advent of our current digital world, TV was broadcast over radio signal. In order to optimize the bandwidth it would be interlaced or they would send half of one frame following by the other half, but the side effect is you would see a combing pattern on the frames like the example below.
+Before we jump right into coding, some historic backround on broadcast television is needed. Prior to the advent of our current digital world, TV was broadcast over radio signal. In order to optimize the bandwidth it would be interlaced or they would send half of one frame following by the other half, but it would sometimes result in a combing pattern on the frames like the example below.
 
 ![Upscale Interlace]({{site.baseurl}}/assets/img/upscale-interlace.png)
 
 TV would be broadcast in NTSC or PAL format. The US, Japan and others use NTSC and some places in Europe and others use PAL. One way you can tell is to check the framerate, 30 FPS for NTSC and 25 FPS for PAL. The TV's would operate at 60hz or 50hz respectively. Now monitors can go up to 120hz or more.
 
-My DVD source is encoded at 60 FPS or NTSC, howver in reality it's closer to 30 FPS with 2 fields that make up a frame, based on the combing I see during frame by frame playback.
+My DVD source is encoded at 60 FPS or NTSC, however in reality it's closer to 30 FPS with 2 fields that make up a frame, based on the combing I see during frame by frame playback.
 
 Most cinematic films were created at a standard 24 FPS which as you might notice isn't divisible by 30 or 60. A telecine method called a [3:2 pulldown](https://en.wikipedia.org/wiki/Three-two_pull_down) would be used to generate enough frames to reflect the broadcast television frequency without causing too many jolting frames, which is roughly a conversion of every 4 frames into 5 frames.
 
@@ -36,7 +36,7 @@ There are 3 aspect ratios:
 
 - SAR: Storage Aspect Ratio
 - DAR: Display Aspect Ratio
-- PAR: Pixel Aspect Ration
+- PAR: Pixel Aspect Ratio
 
 Here's a basic equation for the dimensions:
 
@@ -80,7 +80,7 @@ Final Result:
 
 We will be de-interlacing the fields back into full frames. This has a similiar effect as an inverse telecine but it's technically different which I will explain a little later. As you can see I want it to be back to the full 24 frames per second like the original scans, and since the goal is to upscale, I scaled up the dvd source to 720*540 which upscaled 4x is 2880x2160. 
 
-Upscale Process:
+### Upscale Process:
 
 - Deinterlace
 - rescale to 720x540
@@ -89,11 +89,13 @@ Upscale Process:
 - Combine frames to video
 - merge audio from original source with video frames.
 
-Deinterlacing:
+### Deinterlacing:
 
 This source has interlacing and usually isn't an issue as most modern playback software can handle deinterlacing on the fly, but when you upscale an interlaced source the interlacing becomes more pronounced and the automatic deinterlacing software becomes much less effective. There are a variety of ways to deinterlace, but I'm just going to detail 2 examples, FFMPEG's yadif filter and Avisynth's QTGMC. FFMPEG is the simplest option but QTGMC provides the best results as you can see below.
 
 ![Upscale Interlace Comparison]({{site.baseurl}}/assets/img/upscale-interlace-comparison.png)
+
+![Upscale Interlace Comparison2]({{site.baseurl}}/assets/img/upscale-interlace-comparison2.png)
 
 ffmpeg yadif example:
 
@@ -134,7 +136,7 @@ Now this was strictly deinterlacing - one potentially more effective method woul
 
 As with most projects there are a million different ways to do things and I may pursue more of them in the future, but for now the QTGMC results are acceptable enough for me. No doubt a newer technology will come out soon enough.
 
-Splitting a video into frames:
+### Splitting a video into frames:
 
 Now that we've got a decent source encoded how we like it, we can split it out into frames. I've used both FFMPEG or the more user friendly NNMKD FF-Utils
 
@@ -150,7 +152,7 @@ NNMKD FF-Utils
 
 just drag and drop in the extract frames from video tab
 
-Upscaling frames with ESRGAN using [Cupscale](https://github.com/n00mkrad/cupscale/releases):
+### Upscaling frames with ESRGAN using [Cupscale](https://github.com/n00mkrad/cupscale/releases):
 
 You'll need a NVidia GPU with CUDA cores for this if you want any chance of this not melting your processor.
 
@@ -162,7 +164,7 @@ Once you've got that all installed you'll either need to train a model or easier
 
 Point cupscale to your training model and drag and drop your extracted images for upscale. Depending on the length of the source, the scale, and quality it can take quite a while. One episode took over 36 hours of processing, so this is my disclaimer that it's your own fault if you melt your GPU in the process of doing this. If you don't want to destroy your processor you can look into using something like Google Collab instead.
 
-Putting it all together:
+### Putting it all together:
 
 Once cupscale does it's thing and your computer has had time to cool down, you can combine the images into a video and put the audio back together:
 
