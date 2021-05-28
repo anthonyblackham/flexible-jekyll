@@ -181,3 +181,7 @@ ffmpeg -i input_0.mp4 -i input_1.mp4 -c copy -map 0:0 -map 1:1 -shortest out.mp4
 ```
 
 Overall I'm pleased with the results and may revisit again in the future as it will only continue to get better.
+
+Here's a slider to compare a final frame
+
+[https://imgsli.com/NTU3ODI](https://imgsli.com/NTU3ODI)
