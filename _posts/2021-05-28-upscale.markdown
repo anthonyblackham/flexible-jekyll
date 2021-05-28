@@ -1,0 +1,96 @@
+---
+layout: post
+title: AI Upscale
+date: 2021-05-28 5:30:00 -0800
+description: Using Artificial Intelligence to Upscale Low Resolution Sources # (optional)
+img: upscale-cover.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [ai, artificial intelligence, machine learning, esrgan]
+---
+
+As our screens get bigger and add more pixels, our old content stays the same. Grandma's 8mm hand cranked film of her swinging in the tree looks pretty rough compared to the latest 8K footage of a tardigrade's frosty breath in the deep arctic. Televisions aren't the only thing that have improved - new and unique methods of image processing using artificial intelligence are starting to help bridge the gap between the old and the new, one example being the film [They Shall Not Grow Old](https://en.wikipedia.org/wiki/They_Shall_Not_Grow_Old) which upscaled and colourized old World War 1 footage. Many of the new monitors that come out today come with processing units that will upscale and modify content on the fly. 
+
+I was recently watching a cartoon I grew up with on my 4k television which very glaringly reminded me it was originally produced for use over the air on a CRT television. I had seen [some posts](https://www.theverge.com/2019/4/18/18311287/ai-upscaling-algorithms-video-games-mods-modding-esrgan-gigapixel) in the video game emulation world about a machine learning model for upscaling old video game textures, and video games are just interactive cartoons so it should work on old cartoons too... right? Let's find out.
+
+Some historic backround on television history - before the advent of our current digital world, TV was broadcast over radio signal. In order to optimize the bandwidth it would be interlaced or they would send half of one frame following by the other half, but the side effect is you would see a combing pattern on the frames like the example below.
+
+![Upscale Interlace]({{site.baseurl}}/assets/img/upscale-interlace.png)
+
+TV would be broadcast in NTSC or PAL format. The US, Japan and others use NTSC and some places in Europe and others use PAL. One way you can tell is to check the framerate, 30 FPS for NTSC and 25 FPS for PAL. The TV's would operate at 60hz or 50hz repsectively. Now monitors can go up to 120hz or more.
+
+The cartoons I grew up watching were made for broadcasts and as a result their DVD releases (unless officially remastered from the original source material) come with the same types of artifacts you would have seen in the original broadcast. 
+
+The cartoon I was watching is Redwall by Brian Jacques (which incidentally Netflix just picked up the rights for - I'm doubtful they'll remaster the original PBS broadcasts if they even acquired the rights for them as part of the deal). As expected this DVD source is encoded at 60 FPS or NTSC.
+
+Most original cinematic films were created at a standard 24 FPS which as you might notice isn't divisible by 30 or 60. They would use a telecine method called a 3:2 pulldown to generate enough frames to reflect the broadcast television frequency without causing too many jolting frames.
+
+Now that we have all the background information we need, I'm going to list out a rough overview of the considerations for the source content and then what steps I need to take to ultimately upscale the series.
+
+Original Source:
+
+- NTSC (23.976 FPS)
+- Interlacing: YES
+- Dimension: 720x480
+
+Final Result:
+
+- NTSC (23.976 FPS)
+- Interlacing: NO
+- Dimension: 2880x1920
+
+Upscale Process:
+
+Deinterlace
+Crop
+Split video to frames
+Upscale
+Combine frames to video
+merge audio from original source with video frames.
+
+Deinterlacing:
+
+This source has interlacing and usually isn't an issue as most modern playback software can handle deinterlacing on the fly, but when you upscale an interlaced source the interlacing becomes more pronounced and the automatic deinterlacing software becomes much less effective. There are a variety of ways to deinterlace, but I'm just going to detail 2 examples, FFMPEG's yadif filter and Avisynth's QTGMC. FFMPEG is the simplest option but QTGMC is regarded as providing some of the best results. 
+
+First here are the results followed by some of the code used to create the results:
+
+![Upscale Interlace Comparison]({{site.baseurl}}/assets/img/upscale-interlace-comparison.png)
+
+
+ffmpeg yadif example:
+
+```
+ffmpeg -i in.mkv -vf yadif=0 out.mkv
+```
+
+or a more detailed option
+
+```
+ffmpeg -i src.mkv -vf yadif=3:1,mcdeint=2:1 -c:a copy -c:v libx264 -preset ultrafast -qp 0 deinterlaced.mkv
+```
+
+In my case I want to crop and split the frames out in the same go and so I ended up using something like this:
+
+```
+ffmpeg -i input.mkv -vf "yadif=0, fps=23.976, scale=640:480" -c:v libx264 -b:v 8M -c:a copy output.mkv
+```
+
+Avisynth QTGMC example:
+
+```
+    SetFilterMTMode ("QTGMC", 2)
+    a=LWLibavAudioSource(source="original.mkv", stream_index=-1, cache=true, av_sync=true, rate=0, decoder="")
+    v=LWLibavVideoSource("original.mkv")
+    AudioDubEx(v,a)
+    ConvertToYV12()
+    AssumeTFF()
+    QTGMC(preset="Slower", SubPel=2, Sourcematch=3, Lossless=2).assumefps(60000,1001)
+    srestore(24000.0/1001.0)
+    BilinearResize(720,540)
+    Prefetch(10)
+```
+
+Avisynth isn't what I would call user friendly, it was somewhat complicated to get working, but it did yield much better results with far less artifacting. If you are interested [this is the guide that I followed](https://macilatthefront.blogspot.com/2021/01/deinterlacing-with-avisynth-and-qtgmc.html) to install it.
+
+Now this was strictly deinterlacing - one potentially more effective method would be to inverse-telecine the footage. As was discussed above with the 3:2 pulldown method, you just inverse the process and in theory arrive at the original 24 frames that were used to create the broadcast. This would be the ideal method to generate the least artifacting for optimal upscaling. It could also be combined with a deinterlacing filter after the inverse-telecine process in case there were some variable frame rates not accounted for. 
+
+As with most projects there are a million different ways to do things and I may pursue more of them in the future, but for now the QTGMC results are acceptable enough for me. No doubt a newer technology will come out soon enough.
