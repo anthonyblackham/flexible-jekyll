@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Upscale
+title: Upscale
 date: 2021-05-27 5:30:00 -0800
 description: Using Artificial Intelligence to Upscale Low Resolution Sources # (optional)
 img: upscale-cover.png # Add image post (optional)
@@ -54,7 +54,6 @@ This source has interlacing and usually isn't an issue as most modern playback s
 First here are the results followed by some of the code used to create the results:
 
 ![Upscale Interlace Comparison]({{site.baseurl}}/assets/img/upscale-interlace-comparison.png)
-
 
 ffmpeg yadif example:
 
