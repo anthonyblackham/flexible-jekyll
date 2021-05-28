@@ -16,13 +16,13 @@ Before we jump right into coding, some historic backround on broadcast televisio
 
 ![Upscale Interlace]({{site.baseurl}}/assets/img/upscale-interlace.png)
 
-TV would be broadcast in NTSC or PAL format. The US, Japan and others use NTSC and some places in Europe and others use PAL. One way you can tell is to check the framerate, 30 FPS for NTSC and 25 FPS for PAL. The TV's would operate at 60hz or 50hz repsectively. Now monitors can go up to 120hz or more.
+TV would be broadcast in NTSC or PAL format. The US, Japan and others use NTSC and some places in Europe and others use PAL. One way you can tell is to check the framerate, 30 FPS for NTSC and 25 FPS for PAL. The TV's would operate at 60hz or 50hz respectively. Now monitors can go up to 120hz or more.
 
-When looking through my DVDs it is encoded at 60 FPS or NTSC, howver in reality it's closer to 30 FPS with 2 fields that make up a frame, based on the combing I see during frame by frame playback.
+My DVD source is encoded at 60 FPS or NTSC, howver in reality it's closer to 30 FPS with 2 fields that make up a frame, based on the combing I see during frame by frame playback.
 
-Most original cinematic films were created at a standard 24 FPS which as you might notice isn't divisible by 30 or 60. A telecine method called a [3:2 pulldown](https://en.wikipedia.org/wiki/Three-two_pull_down) would be used to generate enough frames to reflect the broadcast television frequency without causing too many jolting frames, which is roughly a conversion of every 4 frames into 5 frames.
+Most cinematic films were created at a standard 24 FPS which as you might notice isn't divisible by 30 or 60. A telecine method called a [3:2 pulldown](https://en.wikipedia.org/wiki/Three-two_pull_down) would be used to generate enough frames to reflect the broadcast television frequency without causing too many jolting frames, which is roughly a conversion of every 4 frames into 5 frames.
 
-Now that we have all the background information we need, I'm going to list out a rough overview of the considerations for the source content and then what steps I need to take to ultimately upscale the series.
+Now that we have all the background information we need, I'm going to list out a rough overview of the considerations for the source content and then see what steps I need to take to ultimately upscale the series.
 
 Original Source:
 
@@ -34,9 +34,9 @@ A few notes on the source and some of the math involved.
 
 There are 3 aspect ratios:
 
-SAR: Storage Aspect Ratio
-DAR: Display Aspect Ratio
-PAR: Pixel Aspect Ration
+- SAR: Storage Aspect Ratio
+- DAR: Display Aspect Ratio
+- PAR: Pixel Aspect Ration
 
 Here's a basic equation for the dimensions:
 
@@ -49,7 +49,9 @@ PAR = DAR/SAR
 So for my DVD source we have
 
 SAR = 720/480 (or 704/480 if you want to crop out the 8 pixel buffer on either side, some refer to it as [Nominal Analogue Blanking](https://en.wikipedia.org/wiki/Nominal_analogue_blanking))
+
 PAR = 10:11
+
 DAR = 4:3
 
 so logically if there are no buffers and the pixels are square 640x480 would yield our 4:3 aspect ratio, but since our PAR is 10:11 and we have an 8 pixel buffer then you effectively have:
@@ -76,7 +78,7 @@ Final Result:
 - Interlacing: NO
 - Dimension: 2880x2160
 
-We will be de-interlacing the fields back into full frames. This has a similiar effect as an inverse telecine but it's technically different which I will explain a little later. As you can see I want it to be back to the full 24 frames per second like the original scans, and since the goal is to upscale I scaled up the dvd source to 720*540 which upscaled 4x is 2880x2160. 
+We will be de-interlacing the fields back into full frames. This has a similiar effect as an inverse telecine but it's technically different which I will explain a little later. As you can see I want it to be back to the full 24 frames per second like the original scans, and since the goal is to upscale, I scaled up the dvd source to 720*540 which upscaled 4x is 2880x2160. 
 
 Upscale Process:
 
@@ -89,9 +91,7 @@ Upscale Process:
 
 Deinterlacing:
 
-This source has interlacing and usually isn't an issue as most modern playback software can handle deinterlacing on the fly, but when you upscale an interlaced source the interlacing becomes more pronounced and the automatic deinterlacing software becomes much less effective. There are a variety of ways to deinterlace, but I'm just going to detail 2 examples, FFMPEG's yadif filter and Avisynth's QTGMC. FFMPEG is the simplest option but QTGMC is regarded as providing some of the best results. 
-
-First here are the results followed by some of the code used to create the results:
+This source has interlacing and usually isn't an issue as most modern playback software can handle deinterlacing on the fly, but when you upscale an interlaced source the interlacing becomes more pronounced and the automatic deinterlacing software becomes much less effective. There are a variety of ways to deinterlace, but I'm just going to detail 2 examples, FFMPEG's yadif filter and Avisynth's QTGMC. FFMPEG is the simplest option but QTGMC provides the best results as you can see below.
 
 ![Upscale Interlace Comparison]({{site.baseurl}}/assets/img/upscale-interlace-comparison.png)
 
@@ -128,7 +128,7 @@ Avisynth QTGMC example:
     Prefetch(10)
 ```
 
-Avisynth isn't what I would call user friendly, it was somewhat complicated to get working, but it did yield much better results with far less artifacting. If you are interested [this is the guide that I followed](https://macilatthefront.blogspot.com/2021/01/deinterlacing-with-avisynth-and-qtgmc.html) to install it.
+Avisynth isn't what I would call user friendly, it was somewhat complicated to get working, but it yielded much better results with fewer artifacts. If you are interested [this is the guide that I followed](https://macilatthefront.blogspot.com/2021/01/deinterlacing-with-avisynth-and-qtgmc.html) to install it.
 
 Now this was strictly deinterlacing - one potentially more effective method would be to inverse-telecine the footage. As was discussed above with the 3:2 pulldown method, you just inverse the process and in theory arrive at the original 24 frames that were used to create the broadcast. This would be the ideal method to generate the least artifacting for optimal upscaling. It could also be combined with a deinterlacing filter after the inverse-telecine process in case there were some variable frame rates not accounted for. 
 
@@ -146,13 +146,13 @@ ffmpeg -i input.mkv -r 1/1 $filename%03d.png
 
 NNMKD FF-Utils
 
-https://github.com/n00mkrad/ff-utils
+[https://github.com/n00mkrad/ff-utils](https://github.com/n00mkrad/ff-utils)
 
 just drag and drop in the extract frames from video tab
 
 Upscaling frames with ESRGAN using [Cupscale](https://github.com/n00mkrad/cupscale/releases):
 
-You'll need a NVidia GPU with CUDA cores for this if you want any chance of this not melting your CPU, if it will work at all. 
+You'll need a NVidia GPU with CUDA cores for this if you want any chance of this not melting your processor.
 
 You can follow the guide [here](https://upscale.wiki/wiki/ESRGAN_Installation_Guide_for_Windows) on installing the prerequisites for ESRGAN
 
@@ -160,7 +160,7 @@ I'm not going to go into great detail on the prep and installation as it changes
 
 Once you've got that all installed you'll either need to train a model or easier, find a pre-trained model that tells ESRGAN what to do with the images you throw at it. I used one called DigitalFrames 2.5 but no doubt there will be even better training models in the future that will yield even better results.
 
-Point cupscale to your training model and drag and drop your extracted images for upscale. Depending on the length of the source, the scale, and quality it can take quite a while. The whole process for one episode took over 36 hours of processing, so this is my disclaimer that it's your own fault if you melt your GPU in the process of doing this. If you don't want to destroy your processor you can look into using something like Google Collab instead.
+Point cupscale to your training model and drag and drop your extracted images for upscale. Depending on the length of the source, the scale, and quality it can take quite a while. One episode took over 36 hours of processing, so this is my disclaimer that it's your own fault if you melt your GPU in the process of doing this. If you don't want to destroy your processor you can look into using something like Google Collab instead.
 
 Putting it all together:
 
@@ -169,7 +169,7 @@ Once cupscale does it's thing and your computer has had time to cool down, you c
 Combining the frames to video:
 
 ```
-ffmpeg -r 23.976 -f image2 -s 2560x1920 -i "%08d-4x_DigitalFrames_2.5.png" -c:v libx264 -preset veryslow -crf 13 -pix_fmt yuv420p -profile:v high -level:v 4.1 -refs 4 -bf 3 qualitytest.mkv
+ffmpeg -r 24/1.001 -f image2 -s 2880x2160 -i "%08d-4x_DigitalFrames_2.5.png" -c:v libx264 -preset veryslow -crf 13 -pix_fmt yuv420p -profile:v high -level:v 4.1 -refs 4 -bf 3 output.mkv
 ```
 
 Combining the sound (eg combines first video with audio of second):
