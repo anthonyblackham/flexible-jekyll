@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upscale
+title: Using AI for Upscaling
 date: 2021-05-27 5:30:00 -0800
 description: Using Artificial Intelligence to Upscale Low Resolution Sources # (optional)
 img: upscale-cover.png # Add image post (optional)
