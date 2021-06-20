@@ -201,10 +201,11 @@ ffmpeg -i 'upscaled.mkv' -i 'originalmaster.mkv' -c copy -map 0:0 -map 1:1 -map 
 ### Compressing to h.265
 
 ```
-ffmpeg -i input.mkv -vf scale=1920:1080 -vcodec libx265 -crf 28 output.mkv
+ffmpeg -i input.mkv -vf scale=1920:1080 -vcodec libx265 -crf 23 output.mkv
 ```
+### Conclusion
 
-Overall I'm pleased with the results and may revisit again in the future as it will only continue to get better.
+There are some limitations to my current workflow. The training model I'm using adds white specks that were originally part of the animations cels used to train the model. Another issue is that the process doesn't have a temporal component or in other words the upscale doesn't take into account the frames before and after the frame being upscaled and so it can add to the judder and artifacts generated because it isn't intelligent enough to interpolate adjoining data. Even with the existing limitations, overall I'm pleased with the results and will revisit it again in the future when there are new models and frameworks that address the current limitations.
 
 Here's a slider to compare a final frame
 
