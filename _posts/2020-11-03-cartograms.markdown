@@ -30,7 +30,7 @@ Ken Field has a gallery of different ways to map election results that can be se
 
 ### Cartograms
 
-This brings us to the idea of cartograms. Cartograms are one way to eliminate unrelated disroportionate data such as geography. Rural areas often vote republican and are over-represented in typical election maps because the states have vast tracts of land but are sparsely populated.
+This brings us to the idea of [cartograms](https://www.gislounge.com/area-cartograms-explored/). Cartograms are one way to eliminate unrelated disroportionate data such as geography. Rural areas often vote republican and are over-represented in typical election maps because the states have vast tracts of land but are sparsely populated.
 
 I've created 4 different cartograms showing the voting weight of registered voters relative to the electoral college.
 
