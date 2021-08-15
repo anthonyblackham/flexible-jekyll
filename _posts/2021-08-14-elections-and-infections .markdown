@@ -16,7 +16,7 @@ Here is a graphic showing the 2020 election results by candidate:
 
 <div class="embed-container">
   <iframe
-      src="https://anthonyblackham.com/elections-and-infections/election/"
+      src="https://anthonyblackham.com/elections-infections/election/"
       width="700"
       height="480"
       frameborder="0"
@@ -28,7 +28,7 @@ Here is a dorling cartogram scaling each state based on the percentage of the po
 
 <div class="embed-container">
   <iframe
-      src="https://anthonyblackham.com/elections-and-infections/dorling/"
+      src="https://anthonyblackham.com/elections-infections/dorling/"
       width="700"
       height="480"
       frameborder="0"
