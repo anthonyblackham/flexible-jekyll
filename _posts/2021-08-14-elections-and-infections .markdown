@@ -38,4 +38,11 @@ Here is a dorling cartogram scaling each state based on the percentage of the po
 
 I may look into a [non-contiguous cartogram](https://observablehq.com/@d3/non-contiguous-cartogram) and/or a [bivariate choropleth](https://observablehq.com/@d3/bivariate-choropleth) for a few more examples of how the data can be manipulated but for now these will be sufficient. 
 
+### Covid-19 Vaccinations
+
+The colored area of each state represents the proportion of the state’s fully vaccinated population. Data: [CDC](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc)`
+
+<iframe width="100%" height="713" frameborder="0"
+  src="https://observablehq.com/embed/@herbfargus/covid-19-vaccinations?cells=viewof+year%2Cchart"></iframe>
+
 I'll let the data speak for itself but [this](https://www.nytimes.com/interactive/2021/04/17/us/vaccine-hesitancy-politics.html) is an interesting article by the New York Times that goes more into depth on the relationship between vaccinations and political affiliation. 
