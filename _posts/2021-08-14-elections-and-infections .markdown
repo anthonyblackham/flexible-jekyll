@@ -5,7 +5,7 @@ date: 2021-08-14 5:30:00 -0800
 description: Using D3 to visualize data # Add post description (optional)
 img: elections-cover.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [d3, election, cartogram]
+tags: [d3, election, cartogram, qgis, covid]
 ---
 
 I wanted to see how the vaccination rates for Covid-19 compared to the election results by state. I pulled some data from the CDC as of August 13 2021 for the percent of people fully vaccinated. I pulled data from the FEC to show which candidate had the majority in each state. If you remember the post on [Cartograms](https://anthonyblackham.com/cartograms/) this may look familiar.  
