@@ -3,7 +3,7 @@ layout: post
 title: Elections and Infections
 date: 2021-08-14 5:30:00 -0800
 description: Using D3 to visualize data # Add post description (optional)
-img: elections-cover.jpg # Add image post (optional)
+img: elections-cover.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [d3, election]
 ---
