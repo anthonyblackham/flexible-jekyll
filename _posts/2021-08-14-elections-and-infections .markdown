@@ -8,9 +8,9 @@ fig-caption: # Add figcaption (optional)
 tags: [d3, election]
 ---
 
-There is no shortage of data and tools available to manipulate data. I've primarily used leaflet and qgis to work on web maps but thought it would be a fun exercise to try out some data visualization using [D3.js](https://d3js.org/)
+I wanted to see how the vaccination rates for Covid-19 compared to the election results by state. I pulled some data from the CDC as of August 13 2021 for the percent of people fully vaccinated. I pulled data from the FEC to show which candidate had the majority in each state. If you remember the post on [Cartograms](https://anthonyblackham.com/cartograms/) this may look familiar.  
 
-If you remember the post on [Cartograms](https://anthonyblackham.com/cartograms/) this may look familiar. I wanted to see how the vaccination rates for Covid-19 compared to the election results by state. I pulled some data from the CDC as of August 13 2021 for the percent of people fully vaccinated. I pulled data from the FEC to show which candidate had the majority in each state. 
+There is no shortage of ways to manipulate and visualize data. While my primary work is in traditional GIS desktop software, there are many different tools suited for platforms outside of the typical work enviroment. [D3.js](https://d3js.org/) is a javascript library specifically geared toward data visualisation. It has some pretty useful tools on its own but it's also flexible enough to be used with libraries like Leaflet. 
 
 Here is a graphic showing the 2020 election results by candidate:
 
@@ -24,6 +24,8 @@ Here is a graphic showing the 2020 election results by candidate:
   </iframe>
 </div>
 
+### Dorling
+
 Here is a dorling cartogram scaling each state based on the percentage of the population vaccinated as of August 13 2021.
 
 <div class="embed-container">
@@ -36,9 +38,25 @@ Here is a dorling cartogram scaling each state based on the percentage of the po
   </iframe>
 </div>
 
-I may look into a [non-contiguous cartogram](https://observablehq.com/@d3/non-contiguous-cartogram) and/or a [bivariate choropleth](https://observablehq.com/@d3/bivariate-choropleth) for a few more examples of how the data can be manipulated but for now these will be sufficient. 
+Here is a non-contiguous cartogram from [ObservableHQ](https://observablehq.com/) that shows various vaccination rates from 2021. 
 
 <iframe width="100%" height="500" frameborder="0"
   src="https://observablehq.com/embed/@herbfargus/covid-19-vaccinations?cell=*"></iframe>
+
+I also included some tradition exhibits generated in QGIS:
+
+### Non-Contiguous
+
+![Non-Contiguous Cartogram]({{site.baseurl}}/assets/img/vaccine-non-contiguous.png)
+
+### Hexagon
+
+![Hexagon Cartogram]({{site.baseurl}}/assets/img/vaccine-hex.png)
+
+### Grid
+
+![Grid Cartogram]({{site.baseurl}}/assets/img/vaccine-grid.png)
+
+A [bivariate choropleth](https://observablehq.com/@d3/bivariate-choropleth) might be another good graphic to try in the future.
 
 I'll let the data speak for itself but [this](https://www.nytimes.com/interactive/2021/04/17/us/vaccine-hesitancy-politics.html) is an interesting article by the New York Times that goes more into depth on the relationship between vaccinations and political affiliation. 
