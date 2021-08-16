@@ -45,6 +45,10 @@ Here is a non-contiguous cartogram from [ObservableHQ](https://observablehq.com/
 
 I also included some tradition exhibits generated in QGIS:
 
+### Contiguous
+
+![Non-Contiguous Cartogram]({{site.baseurl}}/assets/img/vaccine-contiguous.png)
+
 ### Non-Contiguous
 
 ![Non-Contiguous Cartogram]({{site.baseurl}}/assets/img/vaccine-non-contiguous.png)

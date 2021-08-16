@@ -32,11 +32,17 @@ Ken Field has a gallery of different ways to map election results that can be se
 
 This brings us to the idea of [cartograms](https://www.gislounge.com/area-cartograms-explored/). Cartograms are one way to eliminate unrelated disroportionate data such as geography. Rural areas often vote republican and are over-represented in typical election maps because the states have vast tracts of land but are sparsely populated.
 
+There are roughly 3 types of cartograms (depending on who you talk to):
+
+- Contiguous
+- Non-Contiguous
+- Diagrammatic (Dorling (circles), Demers (squares), Hexagons)
+
 I've created 4 different cartograms showing the voting weight of registered voters relative to the electoral college.
 
 ![Cartograms]({{site.baseurl}}/assets/img/cartograms.jpg)
 
-The top left is your standard state map, the top right is a continuous cartogram, bottom are grid and hex cartograms. Each map provides a unique way of portraying the same data. Cartograms eliminate any geographic bias from the data and give a more accurate representation.
+The top left is your standard state map, the top right is a contiguous cartogram, bottom are grid and hex cartograms. Each map provides a unique way of portraying the same data. Cartograms eliminate any geographic bias from the data and give a more accurate representation.
 
 ### Making the Cartograms
 
