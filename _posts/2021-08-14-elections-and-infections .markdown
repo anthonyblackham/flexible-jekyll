@@ -40,7 +40,7 @@ Here is a dorling cartogram scaling each state based on the percentage of the po
 
 Here is a non-contiguous cartogram from [ObservableHQ](https://observablehq.com/) that shows various vaccination rates from 2021. 
 
-<iframe width="100%" height="500" frameborder="0"
+<iframe width="100%" height="750" frameborder="0"
   src="https://observablehq.com/embed/@herbfargus/covid-19-vaccinations?cell=*"></iframe>
 
 I also included some tradition exhibits generated in QGIS:
