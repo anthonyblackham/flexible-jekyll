@@ -63,8 +63,10 @@ install.packages("magick")
 
 Install Rayshader:
 
+```
 devtools::install_github("tylermorganwall/rayshader")
 
+```
 Basic Code:
 
 ```
