@@ -16,7 +16,7 @@ Digital Elevation Models (or DEMS) are one way to represent terrain on the earth
 
 ### QGIS Hillshades
 
-![DEM-QGIS]({{site.baseurl}}/assets/img/dem-qgis.png)
+![DEM-QGIS]({{site.baseurl}}/assets/img/dem-qgis.jpg)
 
 QGIS is a quick way to view and manipulate raster data. Digital Elevation Models show as a basic black and white gradient by default but with a little tweaking in the symbology you can see the difference below.
 
@@ -24,13 +24,13 @@ To create the above image on the right I added a hillshade, set the lowest eleva
 
 ### Blender
 
-![DEM-Blender]({{site.baseurl}}/assets/img/dem-blender.png)
+![DEM-Blender]({{site.baseurl}}/assets/img/dem-blender.jpg)
 
 QGIS has some limitations when it comes to showing light sources. Blender on the other hand is more than capable of handling any type of lighting which adds a nice depth to the data. I won't go into a full tutorial here as it would be quite long but [this](https://github.com/JoeWDavies/geoblender) is the guide that I used in order to create the map above.
 
 ### Rayshader
 
-![DEM-Rayshader]({{site.baseurl}}/assets/img/dem-rayshader.png)
+![DEM-Rayshader]({{site.baseurl}}/assets/img/dem-rayshader.jpg)
 
 [Rayshader](https://www.rayshader.com/) was created by Tyler Morgan-Wall using R. In some ways it's simpler than blender if you have experience using R but can also be quite complex. There are also some limitations when using larger data sets that require supercomputers to process or clever code workarounds. I couldn't process the full UK with the limited RAM on my PC so I was only able to do Ireland for now. I'm sure larger areas are possible but I'm not familiar enough with R yet to process them efficiently.
 
