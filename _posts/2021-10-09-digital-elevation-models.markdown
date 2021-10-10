@@ -18,7 +18,7 @@ Digital Elevation Models (or DEMS) are one way to represent terrain on the earth
 
 ![DEM-QGIS]({{site.baseurl}}/assets/img/dem-qgis.jpg)
 
-QGIS is a quick way to view and manipulate raster data. Digital Elevation Models show as a basic black and white gradient by default but with a little tweaking in the symbology you can see the difference below.
+QGIS is a quick way to view and manipulate raster data. Digital Elevation Models show as a basic black and white gradient by default but with a little tweaking in the symbology you can see the difference above.
 
 To create the above image on the right I added a hillshade, set the lowest elevation value to transparent so only the land is highlighted, and slightly exaggerated the height.
 
