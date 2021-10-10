@@ -42,15 +42,15 @@ Windows needs these files:
 
 R:
 
-https://cran.r-project.org/bin/windows/base/
+[https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/)
 
 Rtools:
 
-https://cran.r-project.org/bin/windows/Rtools/
+[https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/)
 
 Rstudio:
 
-https://www.rstudio.com/products/rstudio/download/
+[https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
 
 Packages within R:
 
