@@ -12,11 +12,11 @@ A volcano at Hunga Tonga–Hunga Haʻapai erupted on January 15, 2022.
 
 ![Tonga Eruption]({{site.baseurl}}/assets/img/tonga-eruption.gif)
 
-The resulting shockwave went around the world
+The plume went as high as [36 miles.](https://earthobservatory.nasa.gov/images/149474/tonga-volcano-plume-reached-the-mesosphere) The resulting shockwave went around the world.
 
 ![Tonga Shockwave]({{site.baseurl}}/assets/img/tonga-shockwave.gif)
 
-The following slides from Landsat and Maxar respectively show the volcano before it erupted on Decemeber 2014 to connect the islands of Tonga Hunga and Tonga Haʻapai, they also show what was left after the eruption on January 15, 2022.
+The islands of Hunga Tonga and Tonga Haʻapai were joined by an eruption in December 2014. Not much remained of the volcano or islands after the eruption on January 15, 2022. See the comparison of both Landsat and Maxar imagery below.
 
 ### Landsat
 
@@ -28,8 +28,14 @@ The following slides from Landsat and Maxar respectively show the volcano before
 
 ### Nuclear Blast Comparison
 
-At its peak the eruption was ~650 km in diameter. I made a comparison showing the scale of the eruption compared to the thermal radation radius of various nuclear blasts courtesy of the [Nukemap](https://nuclearsecrecy.com/nukemap/)
+At its peak the eruption was ~650 km in diameter. I made a comparison showing the scale of the eruption compared to the thermal radation radius of various nuclear blasts, data from the [Nukemap](https://nuclearsecrecy.com/nukemap/)
 
 ![Tonga Comparison]({{site.baseurl}}/assets/img/tonga-comparison.png)
 
-Reuters made some interesting visualizations on [lightning strikes](https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/) and the [scale](https://graphics.reuters.com/TONGA-VOLCANO/lgpdwjyqbvo/) of the eruption. Nasa generated some [animations](https://svs.gsfc.nasa.gov/4726) of the formation of the island prior to the eruption. The plume went as high as [36 miles.](https://earthobservatory.nasa.gov/images/149474/tonga-volcano-plume-reached-the-mesosphere)
+### Related Articles
+
+[Tonga Lightning Strikes](https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/)
+
+[How Big was the Tonga Eruption](https://graphics.reuters.com/TONGA-VOLCANO/lgpdwjyqbvo/)
+
+[Island Forming in Tonga](https://svs.gsfc.nasa.gov/4726)
