@@ -12,6 +12,10 @@ A volcano at Hunga Tonga–Hunga Haʻapai erupted on January 15, 2022.
 
 ![Tonga Eruption]({{site.baseurl}}/assets/img/tonga-eruption.gif)
 
+The resulting shockwave went around the world
+
+![Tonga Shockwave]({{site.baseurl}}/assets/img/tonga-shockwave.gif)
+
 The following slides from Landsat and Maxar respectively show the volcano before it erupted on Decemeber 2014 to connect the islands of Tonga Hunga and Tonga Haʻapai, they also show what was left after the eruption on January 15, 2022.
 
 ### Landsat
@@ -28,4 +32,4 @@ At its peak the eruption was ~650 km in diameter. I made a comparison showing th
 
 ![Tonga Comparison]({{site.baseurl}}/assets/img/tonga-comparison.png)
 
-Reuters also made some interesting visualizations on [lightning strikes](https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/) and the [scale](https://graphics.reuters.com/TONGA-VOLCANO/lgpdwjyqbvo/) of the eruption. Nasa also generated some [animations](https://svs.gsfc.nasa.gov/4726) of the formation of the island prior to the eruption. 
+Reuters made some interesting visualizations on [lightning strikes](https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/) and the [scale](https://graphics.reuters.com/TONGA-VOLCANO/lgpdwjyqbvo/) of the eruption. Nasa generated some [animations](https://svs.gsfc.nasa.gov/4726) of the formation of the island prior to the eruption. The plume went as high as [36 miles.](https://earthobservatory.nasa.gov/images/149474/tonga-volcano-plume-reached-the-mesosphere)
