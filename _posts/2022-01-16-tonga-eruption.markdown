@@ -16,7 +16,7 @@ The plume went as high as [36 miles.](https://earthobservatory.nasa.gov/images/1
 
 ![Tonga Shockwave]({{site.baseurl}}/assets/img/tonga-shockwave.gif)
 
-The islands of Hunga Tonga and Tonga Haʻapai were joined by an eruption in December 2014. Not much remained of the volcano or islands after the eruption on January 15, 2022. See the comparison of both Landsat and Maxar imagery below.
+The islands of Hunga Tonga and Hunga Haʻapai were joined by an eruption in December 2014. Not much remained of the volcano or islands after the eruption on January 15, 2022. See the comparison of both Landsat and Maxar imagery below.
 
 ### Landsat
 
